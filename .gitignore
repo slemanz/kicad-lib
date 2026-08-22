@@ -1,0 +1,11 @@
+# backups e temporarios do KiCad
+*.bak
+*-bak
+*-backups/
+_autosave-*
+*.lck
+fp-info-cache
+
+# lixo de editor / SO
+*~
+.DS_Store

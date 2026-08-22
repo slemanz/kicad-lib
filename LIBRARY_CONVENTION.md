@@ -19,7 +19,7 @@ Symbol library files and footprint directories use **the same category names**, 
 `06_ics.kicad_sym` pairs with `footprint/06_ics.pretty/`.
 
 The numeric prefix controls sort order in the KiCad chooser. It is part of the
-nickname — do not renumber an existing category once parts reference it.
+nickname, do not renumber an existing category once parts reference it.
 
 ---
 
@@ -35,7 +35,7 @@ by a new library.
 | `03_inductors` | Inductors, beads, chokes, transformers | `IND`, `FB`, `CHK`, `XFMR` |
 | `04_diodes` | Rectifier, Schottky, Zener, TVS/ESD, bridge, LED | `DIO`, `DIO-S`, `DIO-Z`, `DIO-T`, `DIO-BR`, `LED` |
 | `05_transistors` | BJT, MOSFET, JFET, IGBT | `BJT-N`, `BJT-P`, `FET-N`, `FET-P`, `JFET`, `IGBT` |
-| `06_ics` | All monolithic silicon — the largest library | `IC-*` (see 2.1) |
+| `06_ics` | All monolithic silicon, the largest library | `IC-*` (see 2.1) |
 | `07_crystals` | Crystals, resonators, oscillators | `XTAL`, `RSN`, `OSC` |
 | `08_connectors` | Headers, plugs, sockets, jacks, card slots | `CON-*` (see 2.2) |
 | `09_electromechanical` | Switches, relays, buzzers, motors, fans, batteries | `SW`, `SW-DIP`, `RLY`, `BUZ`, `MOT`, `FAN`, `BAT`, `BAT-H` |
@@ -101,15 +101,15 @@ The single most important rule:
 
 > **Commodity parts are named by their parameters. Specific silicon is named by its MPN.**
 
-A 10k 1% 0603 resistor is interchangeable across five manufacturers — the parameters
+A 10k 1% 0603 resistor is interchangeable across five manufacturers, so the parameters
 are its identity, and the MPN lives in the fields. An STM32G071 is not
-interchangeable with anything — the MPN *is* its identity.
+interchangeable with anything, the MPN *is* its identity.
 
 | Style | Applies to | Example |
 |---|---|---|
 | Parametric | R, C, L, FB, diodes, BJT/FET, LED, fuse, MOV | `RES_10K-0.1W-1%-0603` |
 | MPN | All `IC-*`, `MOD-*`, `CON-*`, sensors | `IC-MCU_STM32G071CBT6` |
-| Hybrid | Crystals, potentiometers, relays — lead with the value | `XTAL_16MHz-ABM8-16.000MHZ-B2-T` |
+| Hybrid | Crystals, potentiometers, relays, lead with the value | `XTAL_16MHz-ABM8-16.000MHZ-B2-T` |
 
 Never put the manufacturer name in the part name. That is what the `Manufacturer`
 field is for.
@@ -135,14 +135,14 @@ field is for.
 | Fuse | `current-voltage-package` | `FUSE_3A-32V-1206` |
 | MOV | `Vac-Vc-package` | `MOV_275V-710V-DISC-TH` |
 
-Fields that do not apply are omitted, never left blank. Order is fixed — do not
+Fields that do not apply are omitted, never left blank. Order is fixed, do not
 reshuffle to taste.
 
 ### 3.3 Notation rules
 
 * **Zero ohms** is `0R`. Use `R` as the ohm symbol: `0.01R`, `4.7R`, `1K`, `1M`.
 * **Decimal point** for values under one unit: `0.1uF`, not `100n` in a `CAP_` name
-  (use `100nF` — pick the unit that avoids a leading zero).
+  (use `100nF`, pick the unit that avoids a leading zero).
 * **Case is exact**: `pF nF uF mF`, `nH uH mH`, `Hz kHz MHz GHz`, `uA mA A`, `mV V kV`,
   `mW W`, `mR R K M`. Never `UF`, `MHZ`, `Ma`.
 * **Tolerance** always carries `%`: `1%`, `0.1%`, `20%`.
@@ -227,7 +227,7 @@ Every symbol carries these. Empty values are not acceptable.
 `Reference` · `Value` · `Footprint` · `Datasheet` · `Description` ·
 `MPN` · `Manufacturer` · `Lifecycle` (`Active` / `NRND` / `Obsolete`) · `Package`
 
-**Distributors** — at least one, as its own field so a second source is one lookup away:
+**Distributors**: at least one, as its own field so a second source is one lookup away:
 `Digikey` · `Mouser` · `LCSC`
 
 **Per family:**
@@ -240,7 +240,7 @@ Every symbol carries these. Empty values are not acceptable.
 
 **Recommended:** `Height`, `MPN2` / `Manufacturer2`, `Temp_Range`, `RoHS`, `AEC-Q`.
 
-`Description` must be human-readable and searchable — it is what the symbol chooser
+`Description` must be human-readable and searchable, it is what the symbol chooser
 filters on. Write `Resistor 10k 1% 0.1W 0603 thick film`, not `res`.
 
 **Never store price or stock in a field.** Those go stale within weeks and turn the
