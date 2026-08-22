@@ -2,34 +2,36 @@
 	(version 20241209)
 	(generator "kicad_symbol_editor")
 	(generator_version "9.0")
-	(symbol "R_BASE"
+	(symbol "C_BASE"
 		(pin_numbers
 			(hide yes)
 		)
 		(pin_names
-			(offset 0)
+			(offset 0.254)
 		)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "R"
-			(at 2.54 0 90)
+		(property "Reference" "C"
+			(at 0.635 2.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "R_BASE"
-			(at -2.54 0 90)
+		(property "Value" "C_BASE"
+			(at 0.635 -2.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 1.016 -0.254 90)
+			(at 0.9652 -3.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -37,7 +39,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(effects
 				(font
@@ -46,7 +48,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, US symbol"
+		(property "Description" "Unpolarized capacitor"
 			(at 0 0 0)
 			(effects
 				(font
@@ -63,12 +65,21 @@
 				)
 			)
 		)
-		(property "Power" ""
+		(property "Voltage" ""
 			(at 0 0 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Dielectric" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(property "Package" ""
@@ -107,7 +118,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "R res resistor"
+		(property "ki_keywords" "cap capacitor"
 			(at 0 0 0)
 			(effects
 				(font
@@ -116,7 +127,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "R_*"
+		(property "ki_fp_filters" "C_*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -125,13 +136,13 @@
 				(hide yes)
 			)
 		)
-		(symbol "R_BASE_0_1"
+		(symbol "C_BASE_0_1"
 			(polyline
 				(pts
-					(xy 0 2.286) (xy 0 2.54)
+					(xy -2.032 0.762) (xy 2.032 0.762)
 				)
 				(stroke
-					(width 0)
+					(width 0.508)
 					(type default)
 				)
 				(fill
@@ -140,46 +151,10 @@
 			)
 			(polyline
 				(pts
-					(xy 0 2.286) (xy 1.016 1.905) (xy 0 1.524) (xy -1.016 1.143) (xy 0 0.762)
+					(xy -2.032 -0.762) (xy 2.032 -0.762)
 				)
 				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0 0.762) (xy 1.016 0.381) (xy 0 0) (xy -1.016 -0.381) (xy 0 -0.762)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0 -0.762) (xy 1.016 -1.143) (xy 0 -1.524) (xy -1.016 -1.905) (xy 0 -2.286)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0 -2.286) (xy 0 -2.54)
-				)
-				(stroke
-					(width 0)
+					(width 0.508)
 					(type default)
 				)
 				(fill
@@ -187,10 +162,10 @@
 				)
 			)
 		)
-		(symbol "R_BASE_1_1"
+		(symbol "C_BASE_1_1"
 			(pin passive line
 				(at 0 3.81 270)
-				(length 1.27)
+				(length 2.794)
 				(name "~"
 					(effects
 						(font
@@ -208,7 +183,7 @@
 			)
 			(pin passive line
 				(at 0 -3.81 90)
-				(length 1.27)
+				(length 2.794)
 				(name "~"
 					(effects
 						(font
@@ -227,26 +202,28 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "RES_0R-0.125W-0805"
-		(extends "R_BASE")
-		(property "Reference" "R"
-			(at 2.54 0 90)
+	(symbol "CAP_100nF-50V-10%-X7R-0603"
+		(extends "C_BASE")
+		(property "Reference" "C"
+			(at 0.635 2.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "0R"
-			(at -2.54 0 90)
+		(property "Value" "100nF"
+			(at 0.635 -2.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" "01_resistors:R_0805_2012Metric"
-			(at 1.016 -0.254 90)
+		(property "Footprint" "02_capacitors:C_0603_1608Metric"
+			(at 0.9652 -3.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -263,7 +240,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "RES 0Ω 125mW 0805"
+		(property "Description" "CAP CER 100nF 50V X7R 0603"
 			(at 0 0 0)
 			(effects
 				(font
@@ -272,138 +249,29 @@
 				(hide yes)
 			)
 		)
-		(property "Tolerance" ""
+		(property "Tolerance" "10%"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Voltage" "50V"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Dielectric" "X7R"
 			(at 0 0 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
-			)
-		)
-		(property "Power" "125mW"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Package" "0805"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "VISHAY"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "CRCW08050000Z0EA"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C844934"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_keywords" "R res resistor"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_fp_filters" "R_*"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-	)
-	(symbol "RES_0R-0.1W-0603"
-		(extends "R_BASE")
-		(property "Reference" "R"
-			(at 2.54 0 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "0R"
-			(at -2.54 0 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "01_resistors:R_0603_1608Metric"
-			(at 1.016 -0.254 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "RES 0Ω 100mW 0603"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance" ""
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Power" "100mW"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
 			)
 		)
 		(property "Package" "0603"
@@ -415,7 +283,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "VISHAY"
+		(property "Manufacturer" "muRata"
 			(at 0 0 0)
 			(effects
 				(font
@@ -424,7 +292,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CRCW06030000Z0EA"
+		(property "MPN" "GRM188R71H104KA93D"
 			(at 0 0 0)
 			(effects
 				(font
@@ -433,7 +301,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C844915"
+		(property "LCSC" "C77055"
 			(at 0 0 0)
 			(effects
 				(font
@@ -442,7 +310,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "R res resistor"
+		(property "ki_keywords" "cap capacitor"
 			(at 0 0 0)
 			(effects
 				(font
@@ -451,7 +319,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "R_*"
+		(property "ki_fp_filters" "C_*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -461,26 +329,28 @@
 			)
 		)
 	)
-	(symbol "RES_100K-0.125W-1%-0805"
-		(extends "R_BASE")
-		(property "Reference" "R"
-			(at 2.54 0 90)
+	(symbol "CAP_100nF-50V-10%-X7R-0805"
+		(extends "C_BASE")
+		(property "Reference" "C"
+			(at 0.635 2.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "100k"
-			(at -2.54 0 90)
+		(property "Value" "100nF"
+			(at 0.635 -2.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" "01_resistors:R_0805_2012Metric"
-			(at 1.016 -0.254 90)
+		(property "Footprint" "02_capacitors:C_0805_2012Metric"
+			(at 0.9652 -3.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -497,7 +367,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "RES 100kΩ ±1% 125mW 0805"
+		(property "Description" "CAP CER 100nF 50V X7R 0805"
 			(at 0 0 0)
 			(effects
 				(font
@@ -506,7 +376,7 @@
 				(hide yes)
 			)
 		)
-		(property "Tolerance" "1%"
+		(property "Tolerance" "10%"
 			(at 0 0 0)
 			(effects
 				(font
@@ -514,12 +384,21 @@
 				)
 			)
 		)
-		(property "Power" "125mW"
+		(property "Voltage" "50V"
 			(at 0 0 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Dielectric" "X7R"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(property "Package" "0805"
@@ -531,7 +410,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "VISHAY"
+		(property "Manufacturer" "muRata"
 			(at 0 0 0)
 			(effects
 				(font
@@ -540,7 +419,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CRCW0805100KFKEA"
+		(property "MPN" "GRM21BR71H104KA01L"
 			(at 0 0 0)
 			(effects
 				(font
@@ -549,7 +428,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C844935"
+		(property "LCSC" "C77082"
 			(at 0 0 0)
 			(effects
 				(font
@@ -558,7 +437,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "R res resistor"
+		(property "ki_keywords" "cap capacitor"
 			(at 0 0 0)
 			(effects
 				(font
@@ -567,7 +446,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "R_*"
+		(property "ki_fp_filters" "C_*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -577,26 +456,28 @@
 			)
 		)
 	)
-	(symbol "RES_100K-0.1W-1%-0603"
-		(extends "R_BASE")
-		(property "Reference" "R"
-			(at 2.54 0 90)
+	(symbol "CAP_100pF-50V-5%-C0G-0603"
+		(extends "C_BASE")
+		(property "Reference" "C"
+			(at 0.635 2.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "100k"
-			(at -2.54 0 90)
+		(property "Value" "100pF"
+			(at 0.635 -2.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" "01_resistors:R_0603_1608Metric"
-			(at 1.016 -0.254 90)
+		(property "Footprint" "02_capacitors:C_0603_1608Metric"
+			(at 0.9652 -3.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -613,7 +494,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "RES 100kΩ ±1% 100mW 0603"
+		(property "Description" "CAP CER 100pF 50V C0G 0603"
 			(at 0 0 0)
 			(effects
 				(font
@@ -622,7 +503,7 @@
 				(hide yes)
 			)
 		)
-		(property "Tolerance" "1%"
+		(property "Tolerance" "5%"
 			(at 0 0 0)
 			(effects
 				(font
@@ -630,12 +511,21 @@
 				)
 			)
 		)
-		(property "Power" "100mW"
+		(property "Voltage" "50V"
 			(at 0 0 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Dielectric" "C0G"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(property "Package" "0603"
@@ -647,7 +537,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "VISHAY"
+		(property "Manufacturer" "muRata"
 			(at 0 0 0)
 			(effects
 				(font
@@ -656,7 +546,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CRCW0603100KFKTA"
+		(property "MPN" "GRM1885C1H101JA01D"
 			(at 0 0 0)
 			(effects
 				(font
@@ -665,7 +555,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C844120"
+		(property "LCSC" "C71664"
 			(at 0 0 0)
 			(effects
 				(font
@@ -674,7 +564,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "R res resistor"
+		(property "ki_keywords" "cap capacitor"
 			(at 0 0 0)
 			(effects
 				(font
@@ -683,7 +573,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "R_*"
+		(property "ki_fp_filters" "C_*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -693,26 +583,28 @@
 			)
 		)
 	)
-	(symbol "RES_10K-0.125W-1%-0805"
-		(extends "R_BASE")
-		(property "Reference" "R"
-			(at 2.54 0 90)
+	(symbol "CAP_10nF-50V-10%-X7R-0603"
+		(extends "C_BASE")
+		(property "Reference" "C"
+			(at 0.635 2.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "10k"
-			(at -2.54 0 90)
+		(property "Value" "10nF"
+			(at 0.635 -2.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" "01_resistors:R_0805_2012Metric"
-			(at 1.016 -0.254 90)
+		(property "Footprint" "02_capacitors:C_0603_1608Metric"
+			(at 0.9652 -3.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -729,7 +621,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, US symbol"
+		(property "Description" "CAP CER 1nF 50V X7R 0603"
 			(at 0 0 0)
 			(effects
 				(font
@@ -738,7 +630,7 @@
 				(hide yes)
 			)
 		)
-		(property "Tolerance" "1%"
+		(property "Tolerance" "10%"
 			(at 0 0 0)
 			(effects
 				(font
@@ -746,12 +638,148 @@
 				)
 			)
 		)
-		(property "Power" "125mW"
+		(property "Voltage" "50V"
 			(at 0 0 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Dielectric" "X7R"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" "0603"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "muRata"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "GRM188R71H102KA01D"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C71653"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "cap capacitor"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "C_*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "CAP_10uF-16V-10%-X5R-0805"
+		(extends "C_BASE")
+		(property "Reference" "C"
+			(at 0.635 2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10uF"
+			(at 0.635 -2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "02_capacitors:C_0805_2012Metric"
+			(at 0.9652 -3.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "CAP CER 10uF 16V X5R 0805"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" "10%"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Voltage" "16V"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Dielectric" "X5R"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(property "Package" "0805"
@@ -763,7 +791,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "VISHAY"
+		(property "Manufacturer" "muRata"
 			(at 0 0 0)
 			(effects
 				(font
@@ -772,7 +800,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CRCW080510K0FKEA"
+		(property "MPN" "GRM21BR61C106KE15L"
 			(at 0 0 0)
 			(effects
 				(font
@@ -781,7 +809,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C844937"
+		(property "LCSC" "C77075"
 			(at 0 0 0)
 			(effects
 				(font
@@ -790,7 +818,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "R res resistor"
+		(property "ki_keywords" "cap capacitor"
 			(at 0 0 0)
 			(effects
 				(font
@@ -799,7 +827,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "R_*"
+		(property "ki_fp_filters" "C_*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -809,26 +837,28 @@
 			)
 		)
 	)
-	(symbol "RES_10K-0.1W-1%-0603"
-		(extends "R_BASE")
-		(property "Reference" "R"
-			(at 2.54 0 90)
+	(symbol "CAP_1nF-50V-10%-X7R-0603"
+		(extends "C_BASE")
+		(property "Reference" "C"
+			(at 0.635 2.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "10k"
-			(at -2.54 0 90)
+		(property "Value" "1nF"
+			(at 0.635 -2.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" "01_resistors:R_0603_1608Metric"
-			(at 1.016 -0.254 90)
+		(property "Footprint" "02_capacitors:C_0603_1608Metric"
+			(at 0.9652 -3.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -845,7 +875,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "RES 10kΩ ±1% 100mW 0603"
+		(property "Description" "CAP CER 1nF 50V X7R 0603"
 			(at 0 0 0)
 			(effects
 				(font
@@ -854,7 +884,7 @@
 				(hide yes)
 			)
 		)
-		(property "Tolerance" "1%"
+		(property "Tolerance" "10%"
 			(at 0 0 0)
 			(effects
 				(font
@@ -862,12 +892,21 @@
 				)
 			)
 		)
-		(property "Power" "100mW"
+		(property "Voltage" "50V"
 			(at 0 0 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Dielectric" "X7R"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(property "Package" "0603"
@@ -879,7 +918,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "VISHAY"
+		(property "Manufacturer" "muRata"
 			(at 0 0 0)
 			(effects
 				(font
@@ -888,7 +927,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CRCW060310K0FKEA"
+		(property "MPN" "GRM188R71H102KA01D"
 			(at 0 0 0)
 			(effects
 				(font
@@ -897,7 +936,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C844918"
+		(property "LCSC" "C71653"
 			(at 0 0 0)
 			(effects
 				(font
@@ -906,7 +945,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "R res resistor"
+		(property "ki_keywords" "cap capacitor"
 			(at 0 0 0)
 			(effects
 				(font
@@ -915,7 +954,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "R_*"
+		(property "ki_fp_filters" "C_*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -925,26 +964,28 @@
 			)
 		)
 	)
-	(symbol "RES_1K-0.125W-1%-0805"
-		(extends "R_BASE")
-		(property "Reference" "R"
-			(at 2.54 0 90)
+	(symbol "CAP_1uF-25V-10%-X7R-0603"
+		(extends "C_BASE")
+		(property "Reference" "C"
+			(at 0.635 2.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "1k"
-			(at -2.54 0 90)
+		(property "Value" "1uF"
+			(at 0.635 -2.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" "01_resistors:R_0805_2012Metric"
-			(at 1.016 -0.254 90)
+		(property "Footprint" "02_capacitors:C_0603_1608Metric"
+			(at 0.9652 -3.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -961,7 +1002,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "RES 1kΩ ±1% 125mW 0805"
+		(property "Description" "CAP CER 1uF 25V X7R 0603"
 			(at 0 0 0)
 			(effects
 				(font
@@ -970,7 +1011,7 @@
 				(hide yes)
 			)
 		)
-		(property "Tolerance" "1%"
+		(property "Tolerance" "10%"
 			(at 0 0 0)
 			(effects
 				(font
@@ -978,12 +1019,275 @@
 				)
 			)
 		)
-		(property "Power" "125mW"
+		(property "Voltage" "25V"
 			(at 0 0 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Dielectric" "X7R"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" "0603"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "muRata"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "GCM188R71E105KA64D"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C85862"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "cap capacitor"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "C_*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "CAP_22pF-50V-5%-C0G-0603"
+		(extends "C_BASE")
+		(property "Reference" "C"
+			(at 0.635 2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "22pF"
+			(at 0.635 -2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "02_capacitors:C_0603_1608Metric"
+			(at 0.9652 -3.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "CAP CER 22pF 50V C0G 0603"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" "5%"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Voltage" "50V"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Dielectric" "C0G "
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" "0603"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "CL10C220JB8NNNC"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C1653"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "cap capacitor"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "C_*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol "CAP_22uF-10V-20%-X5R-0805"
+		(extends "C_BASE")
+		(property "Reference" "C"
+			(at 0.635 2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "22uF"
+			(at 0.635 -2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "02_capacitors:C_0805_2012Metric"
+			(at 0.9652 -3.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "CAP CER 22uF 10V X5R 0805"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" "20%"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Voltage" "10V"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Dielectric" "X5R"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(property "Package" "0805"
@@ -995,7 +1299,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "VISHAY"
+		(property "Manufacturer" "muRata"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1004,7 +1308,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CRCW08051K00FKEA"
+		(property "MPN" "GRM21BR61A226ME51L"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1013,7 +1317,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C844939"
+		(property "LCSC" "C77074"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1022,7 +1326,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "R res resistor"
+		(property "ki_keywords" "cap capacitor"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1031,7 +1335,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "R_*"
+		(property "ki_fp_filters" "C_*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1041,26 +1345,28 @@
 			)
 		)
 	)
-	(symbol "RES_1K-0.1W-1%-0603"
-		(extends "R_BASE")
-		(property "Reference" "R"
-			(at 2.54 0 90)
+	(symbol "CAP_4.7uF-16V-10%-X5R-0603"
+		(extends "C_BASE")
+		(property "Reference" "C"
+			(at 0.635 2.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "1k"
-			(at -2.54 0 90)
+		(property "Value" "4.7uF"
+			(at 0.635 -2.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" "01_resistors:R_0603_1608Metric"
-			(at 1.016 -0.254 90)
+		(property "Footprint" "02_capacitors:C_0603_1608Metric"
+			(at 0.9652 -3.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1077,7 +1383,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "RES 1kΩ ±1% 100mW 0603"
+		(property "Description" "CAP CER 4.7uF 16V X5R 0603"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1086,7 +1392,7 @@
 				(hide yes)
 			)
 		)
-		(property "Tolerance" "1%"
+		(property "Tolerance" "10%"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1094,12 +1400,21 @@
 				)
 			)
 		)
-		(property "Power" "100mW"
+		(property "Voltage" "16V"
 			(at 0 0 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Dielectric" "X5R"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(property "Package" "0603"
@@ -1111,7 +1426,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "VISHAY"
+		(property "Manufacturer" "muRata"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1120,7 +1435,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CRCW06031K00FKEA"
+		(property "MPN" "GRM188R61C475KE11D"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1129,7 +1444,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C844920"
+		(property "LCSC" "C77045"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1138,7 +1453,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "R res resistor"
+		(property "ki_keywords" "cap capacitor"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1147,7 +1462,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "R_*"
+		(property "ki_fp_filters" "C_*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1157,26 +1472,28 @@
 			)
 		)
 	)
-	(symbol "RES_4.7K-0.125W-1%-0805"
-		(extends "R_BASE")
-		(property "Reference" "R"
-			(at 2.54 0 90)
+	(symbol "CAP_47uF-10V-20%-X5R-1206"
+		(extends "C_BASE")
+		(property "Reference" "C"
+			(at 0.635 2.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "4k7"
-			(at -2.54 0 90)
+		(property "Value" "47uF"
+			(at 0.635 -2.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" "01_resistors:R_0805_2012Metric"
-			(at 1.016 -0.254 90)
+		(property "Footprint" "02_capacitors:C_1206_3216Metric"
+			(at 0.9652 -3.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1193,7 +1510,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "RES 1kΩ ±1% 125mW 0805"
+		(property "Description" "CAP CER 47uF 10V X5R 1206"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1202,7 +1519,7 @@
 				(hide yes)
 			)
 		)
-		(property "Tolerance" "1%"
+		(property "Tolerance" "20%"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1210,7 +1527,7 @@
 				)
 			)
 		)
-		(property "Power" "125mW"
+		(property "Voltage" "10V"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1218,16 +1535,7 @@
 				)
 			)
 		)
-		(property "Package" "0805"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "VISHAY"
+		(property "Dielectric" "X5R"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1236,7 +1544,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CRCW08051K00FKEA"
+		(property "Package" "1206"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1245,7 +1553,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C844939"
+		(property "Manufacturer" "muRata"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1254,7 +1562,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "R res resistor"
+		(property "MPN" "GRM31CR61A476ME15L"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1263,7 +1571,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "R_*"
+		(property "LCSC" "C94034"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1272,35 +1580,7 @@
 				(hide yes)
 			)
 		)
-	)
-	(symbol "RES_4.7K-0.1W-1%-0603"
-		(extends "R_BASE")
-		(property "Reference" "R"
-			(at 2.54 0 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "4k7"
-			(at -2.54 0 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "01_resistors:R_0603_1608Metric"
-			(at 1.016 -0.254 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
+		(property "ki_keywords" "cap capacitor"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1309,77 +1589,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "RES 4.7kΩ ±1% 100mW 0603"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance" "1%"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Power" "100mW"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Package" "0603"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "VISHAY"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "CRCW06034K70FKEA"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C844931"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_keywords" "R res resistor"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_fp_filters" "R_*"
+		(property "ki_fp_filters" "C_*"
 			(at 0 0 0)
 			(effects
 				(font
