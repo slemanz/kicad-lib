@@ -123,7 +123,7 @@ field is for.
 | Shunt | `value-power-tolerance-package` | `RES-SH_0.01R-1W-1%-2512` |
 | Capacitor (MLCC) | `value-voltage-tolerance-dielectric-package` | `CAP_100nF-50V-10%-X7R-0603` |
 | Capacitor (electrolytic) | `value-voltage-tolerance-package` | `CAP-E_100uF-25V-20%-RAD-TH` |
-| Inductor | `value-Isat-tolerance-package` | `IND_10uH-1.2A-20%-0805` |
+| Inductor | `value-Idc-tolerance-package` | `IND_10uH-1.2A-20%-0805` |
 | Ferrite bead | `Z@freq-current-package` | `FB_600R@100MHz-1.5A-0603` |
 | Diode | `Vr-If-package` | `DIO_100V-1A-SOD-123` |
 | Schottky | `Vr-If-Vf-package` | `DIO-S_40V-1A-0.45V-SOD-123` |
@@ -236,7 +236,7 @@ Every symbol carries these. Empty values are not acceptable.
 |---|---|
 | Resistor | `Tolerance`, `Power`, `TempCoeff` (precision only) |
 | Capacitor | `Tolerance`, `Voltage`, `Dielectric` |
-| Inductor | `Tolerance`, `Isat`, `Irms`, `DCR` |
+| Inductor | `Tolerance`, `Idc`, `DCR` |
 
 **Recommended:** `Height`, `MPN2` / `Manufacturer2`, `Temp_Range`, `RoHS`, `AEC-Q`.
 
