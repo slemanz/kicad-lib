@@ -126,8 +126,8 @@ field is for.
 | Inductor | `value-Idc-tolerance-package` | `IND_10uH-1.2A-20%-0805` |
 | Ferrite bead | `Z@freq-current-package` | `FB_600R@100MHz-1.5A-0603` |
 | Diode | `Vr-If-package` | `DIO_100V-1A-SOD-123` |
-| Schottky | `Vr-If-Vf-package` | `DIO-S_40V-1A-0.45V-SOD-123` |
-| Zener | `Vz-power-tolerance-package` | `DIO-Z_5.1V-0.5W-5%-SOD-123` |
+| Schottky | `Vr-If-Vf-package` | `DIO-S_40V-1A-0.6V-SOD-123` |
+| Zener | `Vz-power-package` | `DIO-Z_5.1V-0.5W-SOD-123` |
 | TVS / ESD | `Vrwm-Vc-package` | `DIO-T_5V-9.2V-SOD-523` |
 | LED | `color-Vf-If-package` | `LED_RED-2V-20mA-0603` |
 | BJT | `Vceo-Ic-package` | `BJT-N_40V-200mA-SOT-23` |
@@ -138,6 +138,12 @@ field is for.
 Fields that do not apply are omitted, never left blank. Order is fixed, do not
 reshuffle to taste.
 
+Zener tolerance is deliberately **not** in the name. The Vz grade is already encoded
+in the MPN (`BZT52C5V1` is the 5.1V bin) and it does not change what the part does in
+a circuit, so it only makes the name longer. Record it in `Description` when it
+matters. Tolerance stays in the name for R, C and L, where it is the whole point of
+picking one part over another.
+
 ### 3.3 Notation rules
 
 * **Zero ohms** is `0R`. Use `R` as the ohm symbol: `0.01R`, `4.7R`, `1K`, `1M`.
@@ -145,6 +151,10 @@ reshuffle to taste.
   (use `100nF`, pick the unit that avoids a leading zero).
 * **Case is exact**: `pF nF uF mF`, `nH uH mH`, `Hz kHz MHz GHz`, `uA mA A`, `mV V kV`,
   `mW W`, `mR R K M`. Never `UF`, `MHZ`, `Ma`.
+* **`K` in the name, `k` in the `Value`.** The name uses uppercase `K` for the kilo
+  multiplier so every part name reads the same way: `RES_4.7K-0.1W-1%-0603`. The
+  `Value` field is what the schematic prints, so it follows SI and uses lowercase
+  `k`: `4k7`. `M` is uppercase in both, because SI mega already is.
 * **Tolerance** always carries `%`: `1%`, `0.1%`, `20%`.
 * **Forbidden characters**: space, comma, `/`, `\`, `:`, `"`, `'`, `#`, `(`, `)`.
   These break KiCad library nicknames, file paths, or BOM CSV export.
@@ -160,7 +170,7 @@ Use the JEDEC or industry name verbatim when one exists.
 | `0402` `0603` `0805` `1206` `2512` | Imperial chip sizes |
 | `SOT-23` `SOT-23-5` `SOT-223` `SOD-123` | Standard small outline |
 | `SOIC-8` `TSSOP-16` `QFN-24` `LQFP-48` `BGA-64` | Standard IC packages |
-| `DO-214AC` `DO-214AB` | SMA / SMB |
+| `DO-214AC` `DO-214AA` `DO-214AB` | SMA / SMB / SMC |
 | `TH` | Generic through-hole, no standard name |
 | `RAD-TH` `AXL-TH` | Radial / axial leaded |
 | `SMD` | Generic surface mount, no standard name |
@@ -206,16 +216,16 @@ Set on the symbol, per IEEE 315 / ASME Y14.44.
 |---|---|---|---|
 | `R` | Resistor | `D` | Diode, LED |
 | `RN` | Resistor array | `Q` | Transistor |
-| `RV` | Potentiometer | `U` | Integrated circuit |
+| `RV` | Potentiometer | `U` | Integrated circuit, module |
 | `RT` | Thermistor | `Y` | Crystal, oscillator |
 | `C` | Capacitor | `J` | Connector (fixed) |
-| `L` | Inductor, bead | `P` | Connector (mating) |
-| `T` | Transformer | `S` | Switch |
-| `F` | Fuse | `K` | Relay |
-| `MOV` | Varistor | `LS` | Buzzer, speaker |
-| `BT` | Battery | `M` | Motor, fan |
-| `TP` | Test point | `H` | Mounting hardware |
-| `FID` | Fiducial | `A` | Module, sub-assembly |
+| `L` | Inductor | `P` | Connector (mating) |
+| `FB` | Ferrite bead | `S` | Switch |
+| `T` | Transformer | `K` | Relay |
+| `F` | Fuse | `LS` | Buzzer, speaker |
+| `MOV` | Varistor | `M` | Motor, fan |
+| `BT` | Battery | `H` | Mounting hardware |
+| `TP` | Test point | `FID` | Fiducial |
 
 ---
 
@@ -225,7 +235,7 @@ Every symbol carries these. Empty values are not acceptable.
 
 **Always:**
 `Reference` · `Value` · `Footprint` · `Datasheet` · `Description` ·
-`MPN` · `Manufacturer` · `Lifecycle` (`Active` / `NRND` / `Obsolete`) · `Package`
+`MPN` · `Manufacturer` · `Package`
 
 **Distributors**: at least one, as its own field so a second source is one lookup away:
 `Digikey` · `Mouser` · `LCSC`
@@ -236,16 +246,20 @@ Every symbol carries these. Empty values are not acceptable.
 |---|---|
 | Resistor | `Tolerance`, `Power`, `TempCoeff` (precision only) |
 | Capacitor | `Tolerance`, `Voltage`, `Dielectric` |
-| Inductor | `Tolerance`, `Idc`, `DCR` |
+| Inductor | `Tolerance`, `Idc` |
 
 **Recommended:** `Height`, `MPN2` / `Manufacturer2`, `Temp_Range`, `RoHS`, `AEC-Q`.
+
+A `0R` jumper carries no `Tolerance`: the part is specified by a maximum resistance,
+not by a percentage, so the field does not apply and is omitted per 3.2.
 
 `Description` must be human-readable and searchable, it is what the symbol chooser
 filters on. Write `Resistor 10k 1% 0.1W 0603 thick film`, not `res`.
 
-**Never store price or stock in a field.** Those go stale within weeks and turn the
-library into a source of wrong information. Pricing belongs to the BOM tooling,
-resolved live from the MPN.
+**Never store price, stock or lifecycle status in a field.** Those go stale within
+weeks and turn the library into a source of wrong information. A stale `Active` is
+worse than no value at all, because it looks authoritative. Pricing and lifecycle
+belong to the BOM tooling, resolved live from the MPN at design time.
 
 ---
 
@@ -267,8 +281,8 @@ CAP-T_10uF-16V-10%-DO-214AA
 IND_10uH-1.2A-20%-0805
 FB_600R@100MHz-1.5A-0603
 
-DIO-S_40V-1A-0.45V-SOD-123
-DIO-Z_5.1V-0.5W-5%-SOD-123
+DIO-S_40V-1A-0.6V-SOD-123
+DIO-Z_5.1V-0.5W-SOD-123
 DIO-T_5V-9.2V-SOD-523
 LED_GREEN-2.1V-20mA-0603
 

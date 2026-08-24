@@ -72,7 +72,7 @@ application support.
 | Rectifier / Schottky | Nexperia · onsemi · Vishay | Diodes Inc · Changjiang (CJ) |
 | Zener | Nexperia · onsemi · Vishay | Changjiang (BZT52 series) |
 | TVS / ESD | Littelfuse · Semtech · Nexperia (PESD) | ProTek · Changjiang |
-| LEDs | Nichia · Cree · Osram | Everlight · Hongli (KT series) |
+| LEDs | Nichia · Cree · Osram | Everlight · Hubei KENTO (KT series) |
 
 ESD protection is the one place not to economize. Clamping voltage and dynamic
 resistance vary widely between a characterized part and a generic one, and the
@@ -186,10 +186,13 @@ cover your target market.
 ## Lifecycle
 
 Whatever the manufacturer, check lifecycle status before committing a part to
-the library and record it in the `Lifecycle` field. A part marked NRND today is
-a redesign in eighteen months. Manufacturer product pages and distributor
-lifecycle indicators are the primary sources; treat any part you cannot find a
-status for as a risk.
+the library. A part marked NRND today is a redesign in eighteen months.
+Manufacturer product pages and distributor lifecycle indicators are the primary
+sources; treat any part you cannot find a status for as a risk.
+
+The status is deliberately **not** stored in a field. It goes stale exactly the way
+price and stock do, and a stale `Active` sitting in the library is worse than no
+value at all. Check it against the distributor at design time, every time.
 
 For anything expected to stay in production, fill in `MPN2` and `Manufacturer2`
 with a qualified second source at the time of design, not at the time of
