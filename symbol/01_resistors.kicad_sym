@@ -343,6 +343,7 @@
 				(hide yes)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "RES_0R-0.1W-0603"
 		(extends "R_BASE")
@@ -460,6 +461,7 @@
 				(hide yes)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "RES_100K-0.125W-1%-0805"
 		(extends "R_BASE")
@@ -576,6 +578,7 @@
 				(hide yes)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "RES_100K-0.1W-1%-0603"
 		(extends "R_BASE")
@@ -692,6 +695,7 @@
 				(hide yes)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "RES_10K-0.125W-1%-0805"
 		(extends "R_BASE")
@@ -808,6 +812,7 @@
 				(hide yes)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "RES_10K-0.1W-1%-0603"
 		(extends "R_BASE")
@@ -924,6 +929,7 @@
 				(hide yes)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "RES_1K-0.125W-1%-0805"
 		(extends "R_BASE")
@@ -1040,6 +1046,7 @@
 				(hide yes)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "RES_1K-0.1W-1%-0603"
 		(extends "R_BASE")
@@ -1156,6 +1163,7 @@
 				(hide yes)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "RES_4.7K-0.125W-1%-0805"
 		(extends "R_BASE")
@@ -1236,7 +1244,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CRCW08051K00FKEA"
+		(property "MPN" "CRCW08054K70FKEA"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1245,7 +1253,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C844939"
+		(property "LCSC" "C844941"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1272,6 +1280,7 @@
 				(hide yes)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "RES_4.7K-0.1W-1%-0603"
 		(extends "R_BASE")
@@ -1388,5 +1397,6 @@
 				(hide yes)
 			)
 		)
+		(embedded_fonts no)
 	)
 )
