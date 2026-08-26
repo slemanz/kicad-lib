@@ -41,7 +41,7 @@ by a new library.
 | `09_electromechanical` | Switches, relays, buzzers, motors, fans, batteries | `SW`, `SW-DIP`, `RLY`, `BUZ`, `MOT`, `FAN`, `BAT`, `BAT-H` |
 | `10_protection` | Fuses, PTC, MOV, gas tubes, EMI filters | `FUSE`, `FUSE-H`, `PPTC`, `MOV`, `GDT`, `FLT` |
 | `11_modules` | Pre-built assemblies with their own PCB | `MOD-*` (see 2.3) |
-| `12_mechanical` | Footprint-only: no electrical function | `MH`, `TP`, `FID`, `LOGO`, `HS`, `PAD` |
+| `12_mechanical` | Board features rather than purchased parts. Electrical function is situational: most entries have none, but a plated mounting hole bonded to GND, a test point or a solder pad does, and still belongs here | `MH`, `TP`, `FID`, `LOGO`, `HS`, `PAD` |
 
 ### 2.1 IC subtypes
 
@@ -231,7 +231,8 @@ Set on the symbol, per IEEE 315 / ASME Y14.44.
 
 ## 7. Required fields
 
-Every symbol carries these. Empty values are not acceptable.
+Every symbol carries these. A field is left empty only when it genuinely does not
+apply to the part, never because the value was not looked up. See 7.1.
 
 **Always:**
 `Reference` · `Value` · `Footprint` · `Datasheet` · `Description` ·
@@ -260,6 +261,32 @@ filters on. Write `Resistor 10k 1% 0.1W 0603 thick film`, not `res`.
 weeks and turn the library into a source of wrong information. A stale `Active` is
 worse than no value at all, because it looks authoritative. Pricing and lifecycle
 belong to the BOM tooling, resolved live from the MPN at design time.
+
+### 7.1 When a field may be left empty
+
+The list above assumes a purchased part: something with a manufacturer, an order
+code, and a line on the BOM. Not every symbol is one. A mounting hole, a fiducial,
+a test point, a logo, a set of pads that exists only to receive a soldered wire,
+none of these are bought, so `MPN`, `Manufacturer` and the distributor fields have
+nothing to hold.
+
+Omit a field when it **does not apply**, and only then:
+
+| Case | Fields that do not apply |
+|---|---|
+| Board feature, not a part: `MH`, `TP`, `FID`, `LOGO`, `PAD` | `MPN`, `Manufacturer`, distributors |
+| Land pattern used bare, e.g. wires soldered into a header footprint | `MPN`, `Manufacturer`, distributors, until it is populated |
+| Part where a value is genuinely not specified, per 3.2 | that field alone, e.g. `Tolerance` on a `0R` |
+
+Anything in the first two rows is marked `in_bom no`. That is what makes the
+omission correct rather than sloppy: the symbol never reaches a BOM, so there is
+nothing to order and no field to fill. The moment a symbol is `in_bom yes`,
+section 7 applies to it in full, with no exceptions.
+
+The distinction that matters is **omitted because inapplicable, not blank because
+nobody looked it up.** A missing `MPN` on a mounting hole is correct. A missing
+`MPN` on a regulator is an unfinished part, and it is worse than an obviously
+wrong one, because nothing about it looks unfinished at the point of use.
 
 ---
 
@@ -301,6 +328,6 @@ CON-USB_ZX62-AB-5PA31
 CON-HDR_2x5-1.27-SMD
 MOD-RF_NINA-B306
 FUSE_3A-32V-1206
-MH_M3-3.2D-6.5P
+MH_M3-3.2D-6.4P
 TP_1.0D-SMD
 ```

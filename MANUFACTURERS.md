@@ -127,7 +127,7 @@ numbers, not to the manufacturer.
 | Wire-to-board | JST · Molex · TE Connectivity | HRO · XKB |
 | Board-to-board | Hirose · Molex · Samtec | - |
 | Headers | Würth · Harwin · Amphenol | - |
-| USB, RF | Hirose · Amphenol · TE Connectivity | Korean Hroparts |
+| USB, RF | Hirose · Amphenol · TE Connectivity | Korean Hroparts · XKB |
 
 Connectors are mechanical parts and fail mechanically. Mating cycle rating and
 retention force are the specs that matter, and they are where the low-cost
