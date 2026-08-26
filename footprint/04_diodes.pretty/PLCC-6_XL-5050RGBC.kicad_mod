@@ -1,0 +1,246 @@
+(footprint "PLCC-6_XL-5050RGBC"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "RGB LED PLCC-6, 5.0x5.0x1.6mm body, three independent dies, land pattern from LED_SMD:LED_RGB_5050-6. Pads are renumbered to the LED_RGB_BASE symbol order (1 R cathode, 2 G cathode, 3 B cathode, 4 B anode, 5 G anode, 6 R anode), which is NOT the manufacturer pin numbering: XL-5050RGBC pin 1 = B cathode, 2 = R cathode, 3 = G cathode, 4 = G anode, 5 = R anode, 6 = B anode. Placed with the package chamfer at the top left, so the cathodes sit on the left. https://www.lcsc.com/product-detail/C2843868.html")
+	(tags "LED RGB PLCC-6 5050 XINGLIGHT XL-5050RGBC")
+	(property "Reference" "REF**"
+		(at 0 -3.5 0)
+		(layer "F.SilkS")
+		(uuid "7b3e91d4-2c60-4a97-8d15-6f20b1e7c011")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "PLCC-6_XL-5050RGBC"
+		(at 0 3.3 0)
+		(layer "F.Fab")
+		(uuid "7b3e91d4-2c60-4a97-8d15-6f20b1e7c012")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "7b3e91d4-2c60-4a97-8d15-6f20b1e7c013")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "7b3e91d4-2c60-4a97-8d15-6f20b1e7c014")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -2.5 -2.7)
+		(end 2.5 -2.7)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "7b3e91d4-2c60-4a97-8d15-6f20b1e7c021")
+	)
+	(fp_line
+		(start 2.5 2.7)
+		(end -2.5 2.7)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "7b3e91d4-2c60-4a97-8d15-6f20b1e7c022")
+	)
+	(fp_line
+		(start -3.65 -2.75)
+		(end -3.65 2.75)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "7b3e91d4-2c60-4a97-8d15-6f20b1e7c031")
+	)
+	(fp_line
+		(start -3.65 2.75)
+		(end 3.65 2.75)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "7b3e91d4-2c60-4a97-8d15-6f20b1e7c032")
+	)
+	(fp_line
+		(start 3.65 -2.75)
+		(end -3.65 -2.75)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "7b3e91d4-2c60-4a97-8d15-6f20b1e7c033")
+	)
+	(fp_line
+		(start 3.65 2.75)
+		(end 3.65 -2.75)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "7b3e91d4-2c60-4a97-8d15-6f20b1e7c034")
+	)
+	(fp_line
+		(start -2.5 -2.5)
+		(end -2.5 2.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "7b3e91d4-2c60-4a97-8d15-6f20b1e7c041")
+	)
+	(fp_line
+		(start -2.5 -1.9)
+		(end -1.9 -2.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "7b3e91d4-2c60-4a97-8d15-6f20b1e7c042")
+	)
+	(fp_line
+		(start -2.5 2.5)
+		(end 2.5 2.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "7b3e91d4-2c60-4a97-8d15-6f20b1e7c043")
+	)
+	(fp_line
+		(start 2.5 -2.5)
+		(end -2.5 -2.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "7b3e91d4-2c60-4a97-8d15-6f20b1e7c044")
+	)
+	(fp_line
+		(start 2.5 2.5)
+		(end 2.5 -2.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "7b3e91d4-2c60-4a97-8d15-6f20b1e7c045")
+	)
+	(fp_circle
+		(center 0 0)
+		(end 0 -1.9)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "7b3e91d4-2c60-4a97-8d15-6f20b1e7c046")
+	)
+	(fp_text user "1"
+		(at -3.3 0 0)
+		(layer "F.SilkS")
+		(uuid "7b3e91d4-2c60-4a97-8d15-6f20b1e7c051")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.15)
+			)
+		)
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "7b3e91d4-2c60-4a97-8d15-6f20b1e7c052")
+		(effects
+			(font
+				(size 0.6 0.6)
+				(thickness 0.06)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -2.4 0 90)
+		(size 1.2 2)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "7b3e91d4-2c60-4a97-8d15-6f20b1e7c061")
+	)
+	(pad "2" smd rect
+		(at -2.4 1.7 90)
+		(size 1.2 2)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "7b3e91d4-2c60-4a97-8d15-6f20b1e7c062")
+	)
+	(pad "3" smd rect
+		(at -2.4 -1.7 90)
+		(size 1.2 2)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "7b3e91d4-2c60-4a97-8d15-6f20b1e7c063")
+	)
+	(pad "4" smd rect
+		(at 2.4 -1.7 90)
+		(size 1.2 2)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "7b3e91d4-2c60-4a97-8d15-6f20b1e7c064")
+	)
+	(pad "5" smd rect
+		(at 2.4 1.7 90)
+		(size 1.2 2)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "7b3e91d4-2c60-4a97-8d15-6f20b1e7c065")
+	)
+	(pad "6" smd rect
+		(at 2.4 0 90)
+		(size 1.2 2)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "7b3e91d4-2c60-4a97-8d15-6f20b1e7c066")
+	)
+	(embedded_fonts no)
+	(model "${KICAD_MYLIB}/3d/PLCC-6_XL-5050RGBC.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)
