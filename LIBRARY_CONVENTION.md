@@ -41,7 +41,7 @@ by a new library.
 | `09_electromechanical` | Switches, relays, buzzers, motors, fans, batteries | `SW`, `SW-DIP`, `RLY`, `BUZ`, `MOT`, `FAN`, `BAT`, `BAT-H` |
 | `10_protection` | Fuses, PTC, MOV, gas tubes, EMI filters | `FUSE`, `FUSE-H`, `PPTC`, `MOV`, `GDT`, `FLT` |
 | `11_modules` | Pre-built assemblies with their own PCB | `MOD-*` (see 2.3) |
-| `12_mechanical` | Board features rather than purchased parts. Electrical function is situational: most entries have none, but a plated mounting hole bonded to GND, a test point or a solder pad does, and still belongs here | `MH`, `TP`, `FID`, `LOGO`, `HS`, `PAD` |
+| `12_mechanical` | Board features rather than purchased parts. Electrical function is situational: most entries have none, but a plated mounting hole bonded to GND, a test point or a solder pad does, and still belongs here | `MH`, `TP`, `FID`, `NT`, `LOGO`, `HS`, `PAD` |
 
 ### 2.1 IC subtypes
 
@@ -134,6 +134,11 @@ field is for.
 | MOSFET | `Vds-Id-Rds-package` | `FET-N_30V-5A-45mR-SOT-23` |
 | Fuse | `current-voltage-package` | `FUSE_3A-32V-1206` |
 | MOV | `Vac-Vc-package` | `MOV_275V-710V-DISC-TH` |
+| Mounting hole | `screw-drill-pad` | `MH_M3-3.2D-6.4P` |
+| Mounting hole (NPTH) | `screw-drill-NPTH` | `MH_M3-3.2D-NPTH` |
+| Test point | `drill-pad-package` | `TP_1.0P-SMD` |
+| Net tie | `ways-pad-package` | `NT_2-1.0P-SMD` |
+| Fiducial | `copper-mask` | `FID_1.0P-2.0M` |
 
 Fields that do not apply are omitted, never left blank. Order is fixed, do not
 reshuffle to taste.
@@ -156,6 +161,10 @@ picking one part over another.
   `Value` field is what the schematic prints, so it follows SI and uses lowercase
   `k`: `4k7`. `M` is uppercase in both, because SI mega already is.
 * **Tolerance** always carries `%`: `1%`, `0.1%`, `20%`.
+* **`D` is a hole, `P` is copper, `M` is a mask opening.** `MH_M3-3.2D-6.4P` is a
+  3.2mm drill inside a 6.4mm pad; `FID_1.0P-2.0M` is 1.0mm of copper inside a 2.0mm
+  mask window. A part with no hole carries no `D`: an SMD test point is `TP_1.0P-SMD`,
+  never `TP_1.0D-SMD`.
 * **Forbidden characters**: space, comma, `/`, `\`, `:`, `"`, `'`, `#`, `(`, `)`.
   These break KiCad library nicknames, file paths, or BOM CSV export.
 * **Never** append `_1`, `_copy`, `_new` to disambiguate. If two parts differ, the
@@ -195,6 +204,24 @@ Prefer `TH`/`SMD` only when the part genuinely has no industry package name.
   `Package_TO_SOT_SMD:`, `Package_SO:`. This library holds only proprietary or
   corrected outlines.
 
+**Exception: board features in `12_mechanical`.** Mounting holes, test points, net
+ties and fiducials are vendored here even though `MountingHole:`, `TestPoint:`,
+`NetTie:` and `Fiducial:` ship with KiCad. The rule above protects you from
+maintaining a second copy of a part you did not design; these are different, because
+what they contribute to a board is not an outline but a **contract with the
+fabricator and with DRC**:
+
+* a net tie is only a net tie because of its `net_tie_pad_groups` group, and a
+  changed group turns a working board into a DRC failure,
+* a fiducial only works because of its mask opening and its missing paste aperture,
+* a mounting hole plating decision is a mechanical and electrical choice, not a
+  drawing.
+
+Those must not shift underneath an existing design when KiCad is upgraded. Where a
+vendored footprint mirrors an official one, keep the upstream **name and geometry**
+so a board can be moved back to the official library without anything moving on the
+copper.
+
 ## 5. 3D model naming
 
 The 3D file is named **exactly like the footprint it belongs to**, with the model
@@ -226,6 +253,7 @@ Set on the symbol, per IEEE 315 / ASME Y14.44.
 | `MOV` | Varistor | `M` | Motor, fan |
 | `BT` | Battery | `H` | Mounting hardware |
 | `TP` | Test point | `FID` | Fiducial |
+| `NT` | Net tie | | |
 
 ---
 
@@ -274,7 +302,7 @@ Omit a field when it **does not apply**, and only then:
 
 | Case | Fields that do not apply |
 |---|---|
-| Board feature, not a part: `MH`, `TP`, `FID`, `LOGO`, `PAD` | `MPN`, `Manufacturer`, distributors |
+| Board feature, not a part: `MH`, `TP`, `FID`, `NT`, `LOGO`, `PAD` | `MPN`, `Manufacturer`, distributors |
 | Land pattern used bare, e.g. wires soldered into a header footprint | `MPN`, `Manufacturer`, distributors, until it is populated |
 | Part where a value is genuinely not specified, per 3.2 | that field alone, e.g. `Tolerance` on a `0R` |
 
@@ -329,5 +357,10 @@ CON-HDR_2x5-1.27-SMD
 MOD-RF_NINA-B306
 FUSE_3A-32V-1206
 MH_M3-3.2D-6.4P
-TP_1.0D-SMD
+MH_M3-3.2D-NPTH
+TP_1.0P-SMD
+TP_0.5D-1.0P-TH
+NT_2-1.0P-SMD
+NT_3-1.0P-SMD
+FID_1.0P-2.0M
 ```
