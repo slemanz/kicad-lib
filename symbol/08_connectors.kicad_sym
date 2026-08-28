@@ -168,7 +168,7 @@
 		(embedded_fonts no)
 	)
 	(symbol "CON-SKT_M12-S8A-GPL-M12"
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "J"
@@ -489,7 +489,7 @@
 		(embedded_fonts no)
 	)
 	(symbol "CON-USB_U254-051N-4BH806"
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "J"
