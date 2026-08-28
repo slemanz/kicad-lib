@@ -1,0 +1,58 @@
+(footprint "NetTie-3_SMD_Pad1.0mm"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "Net tie, 3 pin, 1.0mm round SMD pads on 2mm pitch, joined by a 1.0mm wide copper bridge on F.Cu. Ties separate nets at a single point so DRC accepts the short. The bridge width is the current limit, roughly 1.8A at 10C rise on 1oz outer copper per IPC-2221. Pads carry no mask opening, the tie is never soldered. Cut both zones back so this footprint is the only copper path between them.")
+	(tags "net tie")
+	(property "Reference" "REF**"
+		(at 0 -1.5 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "NetTie-3_SMD_Pad1.0mm"
+		(at 0 1.5 0)
+		(layer "F.Fab")
+		(hide yes)
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr exclude_from_pos_files exclude_from_bom allow_missing_courtyard)
+	(net_tie_pad_groups "1, 2, 3")
+	(fp_poly
+		(pts
+			(xy -2 -0.5) (xy 2 -0.5) (xy 2 0.5) (xy -2 0.5)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.Cu")
+	)
+	(pad "1" smd circle
+		(at -2 0)
+		(size 1 1)
+		(layers "F.Cu")
+	)
+	(pad "2" smd circle
+		(at 0 0)
+		(size 1 1)
+		(layers "F.Cu")
+	)
+	(pad "3" smd circle
+		(at 2 0)
+		(size 1 1)
+		(layers "F.Cu")
+	)
+)
