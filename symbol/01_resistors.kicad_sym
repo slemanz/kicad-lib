@@ -298,7 +298,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "VISHAY"
+		(property "Manufacturer" "UNI-ROYAL"
 			(at 0 0 0)
 			(effects
 				(font
@@ -307,7 +307,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CRCW08050000Z0EA"
+		(property "MPN" "0805W8F0000T5E"
 			(at 0 0 0)
 			(effects
 				(font
@@ -316,7 +316,25 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C844934"
+		(property "LCSC" "C17477"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer2" "VISHAY"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN2" "CRCW08050000Z0EA"
 			(at 0 0 0)
 			(effects
 				(font
@@ -416,7 +434,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "VISHAY"
+		(property "Manufacturer" "UNI-ROYAL"
 			(at 0 0 0)
 			(effects
 				(font
@@ -425,7 +443,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CRCW06030000Z0EA"
+		(property "MPN" "0603WAF0000T5E"
 			(at 0 0 0)
 			(effects
 				(font
@@ -434,7 +452,25 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C844915"
+		(property "LCSC" "C21189"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer2" "VISHAY"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN2" "CRCW06030000Z0EA"
 			(at 0 0 0)
 			(effects
 				(font
@@ -533,7 +569,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "VISHAY"
+		(property "Manufacturer" "UNI-ROYAL"
 			(at 0 0 0)
 			(effects
 				(font
@@ -542,7 +578,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CRCW0805100KFKEA"
+		(property "MPN" "0805W8F1003T5E"
 			(at 0 0 0)
 			(effects
 				(font
@@ -551,7 +587,25 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C844935"
+		(property "LCSC" "C149504"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer2" "VISHAY"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN2" "CRCW0805100KFKEA"
 			(at 0 0 0)
 			(effects
 				(font
@@ -650,7 +704,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "VISHAY"
+		(property "Manufacturer" "UNI-ROYAL"
 			(at 0 0 0)
 			(effects
 				(font
@@ -659,7 +713,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CRCW0603100KFKTA"
+		(property "MPN" "0603WAF1003T5E"
 			(at 0 0 0)
 			(effects
 				(font
@@ -668,7 +722,25 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C844120"
+		(property "LCSC" "C25803"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer2" "VISHAY"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN2" "CRCW0603100KFKTA"
 			(at 0 0 0)
 			(effects
 				(font
@@ -767,7 +839,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "VISHAY"
+		(property "Manufacturer" "UNI-ROYAL"
 			(at 0 0 0)
 			(effects
 				(font
@@ -776,7 +848,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CRCW080510K0FKEA"
+		(property "MPN" "0805W8F1002T5E"
 			(at 0 0 0)
 			(effects
 				(font
@@ -785,7 +857,25 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C844937"
+		(property "LCSC" "C17414"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer2" "VISHAY"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN2" "CRCW080510K0FKEA"
 			(at 0 0 0)
 			(effects
 				(font
@@ -884,7 +974,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "VISHAY"
+		(property "Manufacturer" "UNI-ROYAL"
 			(at 0 0 0)
 			(effects
 				(font
@@ -893,7 +983,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CRCW060310K0FKEA"
+		(property "MPN" "0603WAF1002T5E"
 			(at 0 0 0)
 			(effects
 				(font
@@ -902,7 +992,25 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C844918"
+		(property "LCSC" "C25804"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer2" "VISHAY"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN2" "CRCW060310K0FKEA"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1001,7 +1109,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "VISHAY"
+		(property "Manufacturer" "UNI-ROYAL"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1010,7 +1118,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CRCW08051K00FKEA"
+		(property "MPN" "0805W8F1001T5E"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1019,7 +1127,25 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C844939"
+		(property "LCSC" "C17513"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer2" "VISHAY"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN2" "CRCW08051K00FKEA"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1118,7 +1244,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "VISHAY"
+		(property "Manufacturer" "UNI-ROYAL"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1127,7 +1253,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CRCW06031K00FKEA"
+		(property "MPN" "0603WAF1001T5E"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1136,7 +1262,25 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C844920"
+		(property "LCSC" "C21190"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer2" "VISHAY"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN2" "CRCW06031K00FKEA"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1235,7 +1379,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "VISHAY"
+		(property "Manufacturer" "UNI-ROYAL"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1244,7 +1388,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CRCW0603220RFKEA"
+		(property "MPN" "0603WAF2200T5E"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1253,7 +1397,25 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C844757"
+		(property "LCSC" "C22962"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer2" "VISHAY"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN2" "CRCW0603220RFKEA"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1352,7 +1514,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "VISHAY"
+		(property "Manufacturer" "UNI-ROYAL"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1361,7 +1523,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CRCW08054K70FKEA"
+		(property "MPN" "0805W8F4701T5E"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1370,7 +1532,25 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C844941"
+		(property "LCSC" "C17673"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer2" "VISHAY"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN2" "CRCW08054K70FKEA"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1469,7 +1649,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "VISHAY"
+		(property "Manufacturer" "UNI-ROYAL"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1478,7 +1658,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CRCW06034K70FKEA"
+		(property "MPN" "0603WAF4701T5E"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1487,7 +1667,25 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C844931"
+		(property "LCSC" "C23162"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer2" "VISHAY"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN2" "CRCW06034K70FKEA"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1586,7 +1784,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "VISHAY"
+		(property "Manufacturer" "UNI-ROYAL"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1595,7 +1793,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CRCW060347R0FKEA"
+		(property "MPN" "0603WAF470JT5E"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1604,7 +1802,25 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C511383"
+		(property "LCSC" "C23182"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer2" "VISHAY"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN2" "CRCW060347R0FKEA"
 			(at 0 0 0)
 			(effects
 				(font
