@@ -316,6 +316,49 @@ nobody looked it up.** A missing `MPN` on a mounting hole is correct. A missing
 `MPN` on a regulator is an unfinished part, and it is worse than an obviously
 wrong one, because nothing about it looks unfinished at the point of use.
 
+### 7.2 Sourcing tiers: which part goes in `MPN`, which in `MPN2`
+
+For a parametrically named part, `MPN`/`Manufacturer` hold the **volume tier** and
+`MPN2`/`Manufacturer2` hold the **quality tier**. `MANUFACTURERS.md` says which
+manufacturers are which.
+
+This follows directly from 3.1. A 10k 1% 0603 resistor is interchangeable across five
+manufacturers, so the parameters are its identity and the order code is not. Which
+vendor sits in `MPN` is therefore a *sourcing* decision, not an identity decision, and
+the sourcing decision that scales across projects is the one that assembles without a
+per-part setup fee. The quality-tier part does not disappear, it moves one field over
+to `MPN2`, already chosen, for the day a position turns out to need it.
+
+For these families `MPN2`/`Manufacturer2` stop being *Recommended* under section 7 and
+become **required**. A commodity part carrying only one source is unfinished in the
+same way a regulator with no `MPN` is.
+
+**Applies to** the parametric families of 3.1: `RES`, `CAP`, `IND`, `FB`, `DIO*`,
+`LED`, `BJT*`, `FET*`, `FUSE`, `MOV`.
+
+**Does not apply to:**
+
+| Case | Why |
+|---|---|
+| MPN-named parts: `IC-*`, `MOD-*`, `CON-*`, `XTAL`, sensors | There is no volume tier for an STM32G071. The MPN *is* the identity, and `MPN2` is filled only when a genuine drop-in alternate exists |
+| Parts whose name already encodes the quality decision: precision resistors (`0.1%`, tempco in the name), power inductors, everything in `10_protection` | A 25ppm thin film and a 100ppm thick film are two different parts, not two sources for one part. The quality part is the primary. This is the rule applied, not an exception to it |
+| A commodity part with no volume-tier equivalent **at that exact spec** | The quality part stays in `MPN` and `MPN2` is omitted per 7.1, inapplicable rather than blank |
+| Anything `in_bom no` | Nothing to order |
+
+Never shift a voltage, a dielectric or a tolerance to reach a cheaper part. The name
+states the spec, so a substitution that does not match it makes the name lie, and a
+lying name costs more than a per-part fee ever will. If the cheap spec is the one you
+want, it is a **different part**: give it its own name under 3.2, which the parametric
+grammar already allows without a suffix of any kind.
+
+The **tier itself is never stored**, neither in a name nor in a field. Basic /
+Preferred Extended / Extended is one fabricator's catalogue classification, not a
+property of the part, and it changes without notice. Section 7's ban on price, stock
+and lifecycle covers it for the same reason. In a *name* it would be worse still: a
+stale field is fixed with an edit, while a rename orphans the symbol in every schematic
+that already places it. What the library stores is the `LCSC` code, and the tier is
+resolved from it at design time, every time. `MANUFACTURERS.md` says how.
+
 ---
 
 ## 8. Worked examples

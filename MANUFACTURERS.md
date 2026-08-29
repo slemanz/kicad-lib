@@ -23,6 +23,57 @@ Mixing tiers on one board is normal and expected. A design that uses Yageo for
 forty pull-ups and Panasonic for two feedback dividers is making the right call,
 not cutting corners.
 
+## Which tier goes in which field
+
+For parts named parametrically (R, C, L, FB, diodes, LED, BJT/FET, fuse, MOV):
+
+| Field | Holds |
+|---|---|
+| `MPN` / `Manufacturer` | the **volume tier** part |
+| `MPN2` / `Manufacturer2` | the **quality tier** part |
+
+Both are required for those families. The reasoning, and the cases where the primary
+is the quality part instead, are in `LIBRARY_CONVENTION.md` 7.2 — read it before
+changing an `MPN`, because the short version above has real exceptions.
+
+The library **never records** whether a part is Basic or Extended, in a field or in a
+name. That classification belongs to one fabricator, changes without notice, and goes
+stale exactly the way price and stock do. The `LCSC` code is what the library stores;
+the tier is looked up from it at design time.
+
+## Checking the JLCPCB tier
+
+There are three tiers, not two: **Basic**, **Preferred Extended** and **Extended**.
+Only the last carries a per-part setup fee, so "not Basic" is not the same as
+"expensive to assemble" — check which of the three before redesigning around a part.
+
+**One part, by hand.** `jlcpcb.com/parts`, search the MPN or the `C…` code. The listing
+shows the tier badge and assembly-side stock. A part page is directly reachable as
+`jlcpcb.com/partdetail/C25804`.
+
+Do **not** use `lcsc.com` for this. LCSC is the distributor and its catalogue is
+separate from JLCPCB's assembly catalogue; a part being on LCSC says nothing about its
+tier, or even about it being mountable.
+
+**A whole BOM, or picking parts by parameter.** Use a mirror of the assembly catalogue
+that exposes the flag as data:
+
+* `jlcsearch.tscircuit.com` — filter by parameter and read `is_basic` / `is_preferred`
+  straight out of JSON. `/resistors/list.json?package=0603&resistance=10000` and
+  `/capacitors/list.json?package=0805` take `package`, `resistance`, `capacitance`;
+  `/api/search?q=…` takes free text. Results are stock-sorted, so the Basic part is
+  usually the first row.
+* `yaqwsx.github.io/jlcparts` — the same catalogue as a downloadable SQLite database,
+  for scripting against a full BOM offline.
+
+Both are unofficial mirrors and can lag the live catalogue. They are the right tool for
+*surveying* — finding which specs have a Basic part at all — but confirm the specific
+part on `jlcpcb.com` before committing it to the library.
+
+Since every symbol already carries an `LCSC` field, the check that matters at project
+scale is mechanical: export the BOM, join the `C…` codes against the mirror, and list
+the Extended parts before the layout is frozen.
+
 ---
 
 ## 01 - Resistors
@@ -30,18 +81,23 @@ not cutting corners.
 | Tier | Manufacturers |
 |---|---|
 | Quality | Panasonic (ERJ, ERA) · KOA Speer (RK73) · Vishay (CRCW, TNPW) |
-| Volume | Yageo (RC, AC) · Uniroyal (recommended only for non-critical positions) |
+| Volume | Uniroyal (0603WAF, 0805W8F) · Yageo (RC, AC) |
 
 Panasonic ERA and Vishay TNPW are thin film, so reach for them when tempco or
 long-term drift matters: feedback dividers, current-sense scaling, ADC
 references. Thick film (ERJ, RC) is fine everywhere else. Susumu RG is the
 precision benchmark but is rarely stocked outside the major distributors.
 
+Uniroyal `0603WAF####T5E` and `0805W8F####T5E` are the fee-free 1% thick film lines
+and are the default `MPN` for every fixed resistor in this library. A position that
+needs better than ±100ppm/°C is not the same part: it gets its own name with the
+tempco in it, per convention 3.2, and a thin film primary.
+
 ## 02 - Capacitors
 
 | Type | Quality | Volume |
 |---|---|---|
-| MLCC | Murata (GRM, GCM) · TDK (C, CGA) · Samsung Electro-Mechanics (CL) | Samsung CL · Walsin |
+| MLCC | Murata (GRM, GCM) · TDK (C, CGA) · Samsung Electro-Mechanics (CL) | Samsung (CL) · Yageo (CC) · Fenghua (FH) · Walsin |
 | Aluminum electrolytic | Nichicon · Panasonic · Rubycon | Lelon · Aishi |
 | Tantalum / polymer | KEMET · Kyocera AVX · Vishay | - |
 
@@ -51,6 +107,11 @@ lose most of its rated capacitance under working voltage. Use them wherever the
 actual capacitance is load-bearing, DC-DC output filters, ADC references, PLL
 loop filters. For aluminum electrolytics, ripple current rating and rated
 lifetime at temperature are the specs that separate the tiers.
+
+Volume-tier MLCC coverage is uneven and thins out fast above a few µF: plenty of
+value/voltage/dielectric combinations have no fee-free part at all. When that happens
+the quality part stays primary, per convention 7.2. Do not reach for a nearby voltage
+or dielectric to get there.
 
 ## 03 - Inductors
 
