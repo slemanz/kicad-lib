@@ -233,6 +233,49 @@ Reference it through the library path variable, never a relative path:
 ${KICAD_MYLIB}/3d/LGA-71_NINA-B306.step
 ```
 
+### 5.1 More than one model on a footprint
+
+A footprint may carry several models. A module that plugs into a socket is one
+land pattern but two bodies on the finished board, and a render that shows only
+one of them is wrong by the height of the other. KiCad supports this directly:
+each model has its own `Show` checkbox, so the extra bodies are toggled off for a
+bare-board view without touching the library.
+
+The land pattern still gets exactly one footprint. **Never fork a footprint to
+carry a different set of models** — two copies of the same pads drift apart, and
+the copper is the part of a footprint that must not.
+
+The primary model keeps the footprint's name per section 5. Every additional
+model appends a role:
+
+```
+<FOOTPRINT>-<ROLE>.step
+```
+
+| Role | Body |
+|---|---|
+| `-SOCKET` | The receptacle the part plugs into, when the part is socketed rather than soldered |
+
+`ESP-01.kicad_mod` therefore pairs with `ESP-01.step`, the module, and
+`ESP-01-SOCKET.step`, the 2x4 female header it sits on. The name still answers
+which footprint a model belongs to, which is the whole point of section 5.
+
+Roles are added to this table when a second one is genuinely needed, not invented
+per part.
+
+### 5.2 Where the model sits
+
+A model is positioned so that **placing the footprint at the origin puts the body
+where the assembled part actually is**, with the board top at `z = 0`. A socketed
+part therefore sits at the socket's mating height, not on the board.
+
+Prefer baking the alignment into the file over correcting it with `offset` and
+`rotate` in the footprint. A rotated model whose file is already square to the
+footprint stays correct if the footprint is edited, exported, or re-saved by a
+different KiCad version, and it removes the sign conventions of the 3D viewer's
+axes from the list of things that can be wrong. A pure `z` offset is the
+exception, it is unambiguous and stays in the footprint.
+
 ---
 
 ## 6. Reference designators
@@ -359,6 +402,42 @@ stale field is fixed with an edit, while a rename orphans the symbol in every sc
 that already places it. What the library stores is the `LCSC` code, and the tier is
 resolved from it at design time, every time. `MANUFACTURERS.md` says how.
 
+### 7.3 Hardware that is bought but never placed
+
+A socketed module is one footprint and more than one purchased part. The pads
+belong to the module's footprint per section 5.1, so the socket has no footprint
+of its own, but it is still a line item somebody has to order, and a display that
+ships without its pin header is useless on a board that expects one.
+
+Those parts get their **own symbol**, in the library their prefix says they belong
+to, marked:
+
+```
+(in_bom yes)
+(on_board no)
+```
+
+`on_board no` is KiCad's *Exclude from board*: the symbol never reaches the PCB,
+so it needs no footprint and cannot collide with the pads it is already part of,
+while the BOM still carries it with its own reference, quantity and order code.
+It is drawn as a bare dashed outline with no pins, because it has no nets of its
+own, its nets are the module's.
+
+Two fields tie the pieces together, and they are required on both ends:
+
+| Field | On | Holds |
+|---|---|---|
+| `Mates_With` | the connector symbol | the footprint it is hardware for |
+| `Mating_Parts` | the module symbol | every connector symbol that must be placed with it |
+
+`Footprint` is omitted on these symbols, per 7.1: a part excluded from the board
+has no land pattern to name, which is different from one whose land pattern nobody
+looked up.
+
+A connector is only a candidate for this when it is hardware for a footprint that
+already exists. An ordinary board connector has its own footprint and is `on_board
+yes` like everything else.
+
 ---
 
 ## 8. Worked examples
@@ -397,6 +476,7 @@ IC-IF_USBLC6-2SC6
 XTAL_16MHz-ABM8-16.000MHZ-B2-T
 CON-USB_ZX62-AB-5PA31
 CON-HDR_2x5-1.27-SMD
+CON-SKT_1x16-2.54-TH
 MOD-RF_NINA-B306
 FUSE_3A-32V-1206
 MH_M3-3.2D-6.4P
