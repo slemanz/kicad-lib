@@ -59,7 +59,7 @@
 		(at 0 0)
 		(size 3.2 3.2)
 		(drill 3.2)
-		(layers "F&B.Cu" "*.Mask")
+		(layers "*.Cu" "*.Mask")
 	)
 	(embedded_fonts no)
 )

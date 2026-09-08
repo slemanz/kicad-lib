@@ -335,14 +335,14 @@
 		(at -2.0 -1.6)
 		(size 0.65 0.65)
 		(drill 0.65)
-		(layers "F&B.Cu" "*.Mask")
+		(layers "*.Cu" "*.Mask")
 		(uuid "acf05a7d-3891-4b7c-a83d-228d136c6796")
 	)
 	(pad "" np_thru_hole circle
 		(at 2.0 -1.6)
 		(size 0.65 0.65)
 		(drill 0.65)
-		(layers "F&B.Cu" "*.Mask")
+		(layers "*.Cu" "*.Mask")
 		(uuid "0ec05d94-d499-4c94-91ae-adf505afcce8")
 	)
 	(model "${KICAD_MYLIB}/3d/SMD_U254-051N-4BH806.step"
