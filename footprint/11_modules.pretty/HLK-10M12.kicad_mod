@@ -1,0 +1,280 @@
+(footprint "HLK-10M12"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "AC-DC power module 10W, 85-264VAC input, 12V 830mA output, isolated 3000VAC, through-hole, 46.9x27.8x21.8mm, Hi-Link HLK-10M12, LCSC C403746. Pins 1-2 are mains (non-polarised AC), pins 3-4 are the isolated secondary: keep the isolation barrier between x<0 and x>0 free of copper on every layer, https://www.rhydolabz.com/documents/30/HLK-10M05%20Datasheet.pdf")
+	(tags "AC-DC power module offline switching SMPS 10W 12V 830mA mains isolated through hole Hi-Link HLK-10M C403746")
+	(property "Reference" "REF**"
+		(at 0 -15.4 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "0a1f6d2e-4c11-4f7a-9b21-3d7e5c0a1001")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "HLK-10M12"
+		(at 0 15.4 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "0a1f6d2e-4c11-4f7a-9b21-3d7e5c0a1002")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://www.rhydolabz.com/documents/30/HLK-10M05%20Datasheet.pdf"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0a1f6d2e-4c11-4f7a-9b21-3d7e5c0a1003")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "AC-DC power module 10W 12V 830mA isolated through-hole"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0a1f6d2e-4c11-4f7a-9b21-3d7e5c0a1004")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_line
+		(start -23.56 -14.01)
+		(end 23.56 -14.01)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "0a1f6d2e-4c11-4f7a-9b21-3d7e5c0a1010")
+	)
+	(fp_line
+		(start 23.56 -14.01)
+		(end 23.56 14.01)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "0a1f6d2e-4c11-4f7a-9b21-3d7e5c0a1011")
+	)
+	(fp_line
+		(start 23.56 14.01)
+		(end -23.56 14.01)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "0a1f6d2e-4c11-4f7a-9b21-3d7e5c0a1012")
+	)
+	(fp_line
+		(start -23.56 14.01)
+		(end -23.56 -14.01)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "0a1f6d2e-4c11-4f7a-9b21-3d7e5c0a1013")
+	)
+	(fp_poly
+		(pts
+			(xy -21.25 -6.3) (xy -20.65 -7.4) (xy -21.85 -7.4)
+		)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+		(uuid "0a1f6d2e-4c11-4f7a-9b21-3d7e5c0a1014")
+	)
+	(fp_line
+		(start 17.4 11.4)
+		(end 18.6 11.4)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "0a1f6d2e-4c11-4f7a-9b21-3d7e5c0a1015")
+	)
+	(fp_line
+		(start 18 10.8)
+		(end 18 12)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "0a1f6d2e-4c11-4f7a-9b21-3d7e5c0a1016")
+	)
+	(fp_line
+		(start 17.4 -11.4)
+		(end 18.6 -11.4)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "0a1f6d2e-4c11-4f7a-9b21-3d7e5c0a1017")
+	)
+	(fp_rect
+		(start -24 -14.5)
+		(end 24 14.5)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "0a1f6d2e-4c11-4f7a-9b21-3d7e5c0a1020")
+	)
+	(fp_line
+		(start -22.45 -13.9)
+		(end 23.45 -13.9)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "0a1f6d2e-4c11-4f7a-9b21-3d7e5c0a1030")
+	)
+	(fp_line
+		(start 23.45 -13.9)
+		(end 23.45 13.9)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "0a1f6d2e-4c11-4f7a-9b21-3d7e5c0a1031")
+	)
+	(fp_line
+		(start 23.45 13.9)
+		(end -23.45 13.9)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "0a1f6d2e-4c11-4f7a-9b21-3d7e5c0a1032")
+	)
+	(fp_line
+		(start -23.45 13.9)
+		(end -23.45 -12.9)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "0a1f6d2e-4c11-4f7a-9b21-3d7e5c0a1033")
+	)
+	(fp_line
+		(start -23.45 -12.9)
+		(end -22.45 -13.9)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "0a1f6d2e-4c11-4f7a-9b21-3d7e5c0a1034")
+	)
+	(fp_text user "AC"
+		(at -16 0 0)
+		(layer "F.Fab")
+		(uuid "0a1f6d2e-4c11-4f7a-9b21-3d7e5c0a1040")
+		(effects
+			(font
+				(size 1.5 1.5)
+				(thickness 0.2)
+			)
+		)
+	)
+	(fp_text user "12V"
+		(at 16 0 0)
+		(layer "F.Fab")
+		(uuid "0a1f6d2e-4c11-4f7a-9b21-3d7e5c0a1041")
+		(effects
+			(font
+				(size 1.5 1.5)
+				(thickness 0.2)
+			)
+		)
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "0a1f6d2e-4c11-4f7a-9b21-3d7e5c0a1042")
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.3)
+			)
+		)
+	)
+	(pad "1" thru_hole roundrect
+		(at -21.25 -3.9)
+		(size 2.6 2.6)
+		(drill 1.4)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(roundrect_rratio 0.25)
+		(uuid "0a1f6d2e-4c11-4f7a-9b21-3d7e5c0a1050")
+	)
+	(pad "2" thru_hole circle
+		(at -21.25 3.9)
+		(size 2.6 2.6)
+		(drill 1.4)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "0a1f6d2e-4c11-4f7a-9b21-3d7e5c0a1051")
+	)
+	(pad "3" thru_hole circle
+		(at 21.25 -11.4)
+		(size 2.6 2.6)
+		(drill 1.4)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "0a1f6d2e-4c11-4f7a-9b21-3d7e5c0a1052")
+	)
+	(pad "4" thru_hole circle
+		(at 21.25 11.4)
+		(size 2.6 2.6)
+		(drill 1.4)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "0a1f6d2e-4c11-4f7a-9b21-3d7e5c0a1053")
+	)
+	(embedded_fonts no)
+	(model "${KICAD_MYLIB}/3d/HLK-10M12.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 0 0)
+		)
+	)
+)

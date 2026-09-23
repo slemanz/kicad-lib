@@ -1,0 +1,324 @@
+(footprint "TH_282837-2"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "PCB screw terminal block, 2 positions, 5.08mm pitch, vertical wire entry, through-hole, 300V 13.5A, 16-30AWG, TE Connectivity Buchanan 282837-2, LCSC C592976, https://www.lcsc.com/datasheet/C592976.pdf")
+	(tags "screw terminal block wire to board 2 pole 5.08mm pitch through hole vertical Buchanan TE C592976")
+	(property "Reference" "REF**"
+		(at 0.1465 -4.9085 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "29406024-ecb7-4d9d-992d-9e28bc95115d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "TH_282837-2"
+		(at 0 5.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "30243747-3521-487a-afcd-493700e077ca")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://www.lcsc.com/datasheet/C592976.pdf"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "38729c42-a5c9-4e06-b393-7897701be642")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "Screw terminal block 2 positions 5.08mm pitch vertical entry TH"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0d6d8615-4e93-4d1a-a9b3-fb718153e7cd")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_line
+		(start -5.185 -4.12)
+		(end 5.215 -4.12)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "ca6306ed-b666-4d41-b582-224ec7a04d04")
+	)
+	(fp_line
+		(start -5.185 -2)
+		(end 5.215 -2)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "20b40225-1df8-4e37-93f9-5b3060b91fbc")
+	)
+	(fp_line
+		(start -5.185 2)
+		(end 5.215 2)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "d8aa82ce-b72e-42b2-b57a-19e4cac3e5f0")
+	)
+	(fp_line
+		(start -5.185 4.12)
+		(end -5.185 -4.12)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "762dfa3d-7616-4d04-a79c-ec031d398166")
+	)
+	(fp_line
+		(start -2.825 4.12)
+		(end -5.185 4.12)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "bcb55561-1646-4b1f-8cda-5311760b694e")
+	)
+	(fp_line
+		(start 5.215 -4.12)
+		(end 5.215 4.12)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "cdeb542a-8ec8-4aec-926d-19377db8f297")
+	)
+	(fp_line
+		(start 5.215 4.12)
+		(end -2.225 4.12)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "ea9b638f-283d-400b-ae54-b86f1a6b7593")
+	)
+	(fp_poly
+		(pts
+			(xy -2.525 4.12) (xy -2.085 4.73) (xy -2.965 4.73)
+		)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+		(uuid "f368058b-5843-4bc5-b3b8-35fa3fe31bce")
+	)
+	(fp_rect
+		(start -5.565 -4.5)
+		(end 5.605 4.5)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "a62ed24e-8c46-4695-8b3d-80ba4fd70034")
+	)
+	(fp_line
+		(start -5.065 -4)
+		(end 5.095 -4)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "d8d630f2-5755-49b9-a064-3be81b13ea19")
+	)
+	(fp_line
+		(start -5.065 -2)
+		(end 5.095 -2)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "d828be99-bcc4-4119-a126-aba68107233c")
+	)
+	(fp_line
+		(start -5.065 2)
+		(end -5.065 -4)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "b3a1c445-91bd-47ec-abc2-0efa9a31cced")
+	)
+	(fp_line
+		(start -5.065 2)
+		(end 5.095 2)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "5d882638-3a85-445b-bebe-6ab9ae43274f")
+	)
+	(fp_line
+		(start -3.065 4)
+		(end -5.065 2)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "35edc437-78ac-44ad-be3c-a6a03b22c2c0")
+	)
+	(fp_line
+		(start -1.57 -1.138)
+		(end -3.663 0.955)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "3757becf-ce39-4b85-bafe-dced1402cdba")
+	)
+	(fp_line
+		(start -1.387 -0.955)
+		(end -3.48 1.138)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "635c3a47-cf8a-4e38-9249-7201f085ad57")
+	)
+	(fp_line
+		(start 3.51 -1.138)
+		(end 1.417 0.955)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "f36fd2eb-f9a4-4514-a01e-6e1d6137e32a")
+	)
+	(fp_line
+		(start 3.693 -0.955)
+		(end 1.6 1.138)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "80346f06-c7dd-4ce3-afe1-1ef7a648df15")
+	)
+	(fp_line
+		(start 5.095 -4)
+		(end 5.095 4)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "97ddc792-03e1-4912-8f9e-ea9fb68fc09b")
+	)
+	(fp_line
+		(start 5.095 4)
+		(end -3.065 4)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "2704cde7-4177-40c2-9036-00a40a45504c")
+	)
+	(fp_circle
+		(center -2.525 0)
+		(end -1.025 0)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "fe93bd42-b706-4808-8c99-784678d34ed0")
+	)
+	(fp_circle
+		(center 2.555 0)
+		(end 4.055 0)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "30d90d15-565c-4ba6-be0d-83ea866eaf38")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0.015 3 0)
+		(layer "F.Fab")
+		(uuid "ef791923-f44b-4bb5-82d4-b44b19d349cc")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole roundrect
+		(at -2.525 0)
+		(size 2.5 2.5)
+		(drill 1.3)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(roundrect_rratio 0.1)
+		(uuid "4bf2cee3-c734-4810-866a-14f52b19a31c")
+	)
+	(pad "2" thru_hole circle
+		(at 2.555 0)
+		(size 2.5 2.5)
+		(drill 1.3)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "c99f4bb0-a29f-41bc-843e-bec891126bd7")
+	)
+	(embedded_fonts no)
+	(model "${KICAD_MYLIB}/3d/TH_282837-2.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 90 -0 -0)
+		)
+	)
+)
