@@ -1,0 +1,240 @@
+(footprint "TH_DC-005-5A-2.0"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "DC power jack, 5.5mm barrel, 2.0mm center pin (mates 5.5x2.1mm plug), right angle, through-hole, switched, 5A, XKB Connection DC-005-5A-2.0, drawing rev A1, LCSC C381116, https://www.lcsc.com/datasheet/C381116.pdf")
+	(tags "DC power jack barrel 5.5mm 2.0mm 2.1mm P4 right angle through hole switched XKB DC-005 C381116")
+	(property "Reference" "REF**"
+		(at -6.6 -5.9 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "4f016d0e-6d25-4d28-9383-52aa7f581983")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "TH_DC-005-5A-2.0"
+		(at -6.6 7.2 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "de22d1ae-2e6f-4ed4-8ff3-cfaacf72a684")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://www.lcsc.com/datasheet/C381116.pdf"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "fe790773-9571-4cfa-ba60-f0ffa7a70142")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "DC power jack 5.5x2.0mm right angle switched TH"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "21e2fa7b-af4f-475d-8e08-e459817bec29")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_line
+		(start -13.71 -4.61)
+		(end 0.51 -4.61)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "cde096d1-d97e-4be0-94ac-f15f0f474126")
+	)
+	(fp_line
+		(start -13.71 -4.61)
+		(end -13.71 4.61)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "c8ccace9-28b8-4712-89df-8630ba8ac81b")
+	)
+	(fp_line
+		(start -13.71 4.61)
+		(end -5.45 4.61)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "eea8f0a7-61dd-4e5a-9cf7-ec7050c21469")
+	)
+	(fp_line
+		(start -0.55 4.61)
+		(end 0.51 4.61)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "c7cefdcc-c18e-4b7e-a855-314453537025")
+	)
+	(fp_line
+		(start 0.51 -4.61)
+		(end 0.51 -2.45)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "bffa67c1-25a8-4930-b6b9-575ce3616032")
+	)
+	(fp_line
+		(start 0.51 2.45)
+		(end 0.51 4.61)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "401857b0-ef74-497d-ae1d-5508ed47e268")
+	)
+	(fp_poly
+		(pts
+			(xy 1.3 0) (xy 1.9 -0.4) (xy 1.9 0.4)
+		)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+		(uuid "ad2aaee1-33c9-4645-906a-8f11e315261b")
+	)
+	(fp_rect
+		(start -14.1 -5.0)
+		(end 2.4 6.2)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "8a734877-110a-45e4-8d68-9a508fc31db7")
+	)
+	(fp_line
+		(start -13.6 -4.5)
+		(end -0.6 -4.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "f0430b8b-9e96-4155-aebd-ad680c71f650")
+	)
+	(fp_line
+		(start -0.6 -4.5)
+		(end 0.4 -3.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "79235b7d-ddec-4f97-80fe-44a4eb2658fc")
+	)
+	(fp_line
+		(start 0.4 -3.5)
+		(end 0.4 4.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "9191ce04-ecd7-46ed-b6f8-cbcf10ab902a")
+	)
+	(fp_line
+		(start 0.4 4.5)
+		(end -13.6 4.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "f8583f53-e044-411e-a52d-034bd5e72b20")
+	)
+	(fp_line
+		(start -13.6 4.5)
+		(end -13.6 -4.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "0190e33d-fe01-415e-ab3a-d1b44db00c6d")
+	)
+	(fp_text user "${REFERENCE}"
+		(at -8.5 0 0)
+		(layer "F.Fab")
+		(uuid "4df4f193-c145-45d4-93bd-8f1a8b81f6b9")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole roundrect
+		(at 0 0)
+		(size 2 4.5)
+		(drill oval 1 3.5)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(roundrect_rratio 0.1)
+		(uuid "708333eb-f16d-4986-a2f9-ad43cb02564d")
+	)
+	(pad "2" thru_hole oval
+		(at -5.9 0)
+		(size 2 4.5)
+		(drill oval 1 3.5)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "37af6fcd-29b3-4dae-b265-15868631e5e3")
+	)
+	(pad "3" thru_hole oval
+		(at -3 4.7)
+		(size 4.5 2)
+		(drill oval 3.5 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "7a435a2b-4b23-47c2-83ca-d25d2a8659a9")
+	)
+	(embedded_fonts no)
+	(model "${KICAD_MYLIB}/3d/TH_DC-005-5A-2.0.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

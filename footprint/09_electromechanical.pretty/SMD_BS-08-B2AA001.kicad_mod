@@ -1,0 +1,197 @@
+(footprint "SMD_BS-08-B2AA001"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "Coin cell holder, CR2032, horizontal SMT 180 degree side-entry, PPA housing, gold plated phosphor bronze contacts, MYOUNG BS-08-B2AA001 (BS-2032-8 SMT), drawing MY-CP-0007 rev A/0, LCSC C964777, https://www.lcsc.com/datasheet/C964777.pdf")
+	(tags "battery holder coin cell CR2032 LIR2032 ML2032 SMD SMT horizontal MYOUNG BS-08 BS-2032-8 C964777")
+	(property "Reference" "REF**"
+		(at 0 -9.1 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "a6e19768-faff-4a8b-9239-afd9b5e49482")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "SMD_BS-08-B2AA001"
+		(at 0 9.1 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "e4ad6717-93dc-409a-8e55-d0038a778087")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://www.lcsc.com/datasheet/C964777.pdf"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "9e0f2ccf-83d3-419e-8401-815297989c31")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "Coin cell holder CR2032 horizontal SMT"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "2e3fafd8-fefe-4b19-aedf-c3af31159e76")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_arc
+		(start -12.593 -2.2)
+		(mid -11.48006 -5.308017)
+		(end -9.514 -7.96)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "742b751a-8239-4664-8caa-a7915e17fc05")
+	)
+	(fp_arc
+		(start -9.514 7.96)
+		(mid -11.48006 5.308017)
+		(end -12.593 2.2)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "1b802c74-7be1-4d4e-ae3f-bc70b71dd16e")
+	)
+	(fp_poly
+		(pts
+			(xy -9.514 -7.96) (xy 6.05 -7.96) (xy 7.25 -6.61) (xy 11.51 -6.61) (xy 11.51 -2.3)
+		)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "a7b65658-3cf6-476f-9d7d-0f3ca47b9002")
+	)
+	(fp_poly
+		(pts
+			(xy -9.514 7.96) (xy 6.05 7.96) (xy 7.25 6.61) (xy 11.51 6.61) (xy 11.51 2.3)
+		)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "38909f04-bf87-4028-9d76-ca2c36115c65")
+	)
+	(fp_rect
+		(start -12.95 -8.1)
+		(end 13.45 8.1)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "89535819-e5bc-4d0b-a8c9-8b326e4188b5")
+	)
+	(fp_arc
+		(start -9.468 7.85)
+		(mid -12.7 0)
+		(end -9.468 -7.85)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "a800a1a0-1209-401e-a628-123ff380689b")
+	)
+	(fp_circle
+		(center -1.55 0)
+		(end 8.6 0)
+		(stroke
+			(width 0.1)
+			(type dash)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "2990bf54-4d2b-4d6f-ac54-d44f2d96f7aa")
+	)
+	(fp_poly
+		(pts
+			(xy -9.468 7.85) (xy 6 7.85) (xy 7.2 6.5) (xy 11.4 6.5) (xy 11.4 1.4) (xy 12.7 1.4) (xy 12.7 -1.4)
+			(xy 11.4 -1.4) (xy 11.4 -6.5) (xy 7.2 -6.5) (xy 6 -7.85) (xy -9.468 -7.85)
+		)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "f09db9c2-4279-4fca-b377-f4a608e39152")
+	)
+	(fp_text user "+"
+		(at 8.3 0 0)
+		(layer "F.SilkS")
+		(uuid "989d81fb-9d6a-40d2-801f-1b2475689cf0")
+		(effects
+			(font
+				(size 1.2 1.2)
+				(thickness 0.18)
+			)
+		)
+	)
+	(fp_text user "${REFERENCE}"
+		(at -1.55 0 0)
+		(layer "F.Fab")
+		(uuid "179f102e-ac62-49b9-81b7-011aeec3be98")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at 11.45 0)
+		(size 3.5 3.8)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "617f2627-9bf6-4cd5-afd8-780025a76ef4")
+	)
+	(pad "2" smd rect
+		(at -11.45 0)
+		(size 6.5 2.8)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "11238df7-6f98-437f-8724-f74574ca9750")
+	)
+	(embedded_fonts no)
+	(model "${KICAD_MYLIB}/3d/SMD_BS-08-B2AA001.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)
