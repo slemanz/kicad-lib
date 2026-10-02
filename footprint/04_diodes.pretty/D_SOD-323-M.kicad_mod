@@ -1,0 +1,244 @@
+(footprint "D_SOD-323-M"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "SOD-323, enlarged pads for hand soldering (IPC density M), 1.0x0.8mm pads at 2.5mm pitch")
+	(tags "SOD-323 diode hand soldering")
+	(property "Reference" "REF**"
+		(at 0 -1.85 0)
+		(layer "F.SilkS")
+		(uuid "88b05e30-af70-4e66-a7c5-1139c8c732e0")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "D_SOD-323-M"
+		(at 0 1.9 0)
+		(layer "F.Fab")
+		(uuid "6b5931e7-9bf3-45f1-bfdd-d17d2a11595f")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "285d5a7b-4146-4250-b01c-2a8acc985c90")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "94047f97-fab3-444e-b8a3-1828564bed43")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -2.1 -0.7)
+		(end -2.1 0.7)
+		(stroke
+			(width 0.3)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "379bb09c-8991-4782-8970-2d7a5261b48c")
+	)
+	(fp_line
+		(start -2.35 -0.95)
+		(end -2.35 0.95)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "33114d11-a1a1-46d3-b36c-823911573b86")
+	)
+	(fp_line
+		(start -2.35 -0.95)
+		(end 2.35 -0.95)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "c3cb3d65-3dbe-4ded-bb7d-9f7de3e0836a")
+	)
+	(fp_line
+		(start 2.35 -0.95)
+		(end 2.35 0.95)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "bb3992f9-a69d-4945-9545-bd9d890fe875")
+	)
+	(fp_line
+		(start 2.35 0.95)
+		(end -2.35 0.95)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "6dd89817-2c7d-433b-b9b2-f622994791c7")
+	)
+	(fp_line
+		(start -0.9 -0.7)
+		(end 0.9 -0.7)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "9de4f904-cd41-434e-b15b-f15971d8ed6f")
+	)
+	(fp_line
+		(start -0.9 0.7)
+		(end -0.9 -0.7)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "8d6d98fb-6292-4781-9928-c446d40e37b8")
+	)
+	(fp_line
+		(start -0.3 -0.35)
+		(end -0.3 0.35)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "3e454fad-b4fa-4391-be7c-8d3d3cb9795c")
+	)
+	(fp_line
+		(start -0.3 0)
+		(end -0.5 0)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "698c6d9b-16e5-42d8-baf6-42323a0e87c2")
+	)
+	(fp_line
+		(start -0.3 0)
+		(end 0.2 -0.35)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "f4c6be94-f920-4bc2-90ef-0072a7d66b05")
+	)
+	(fp_line
+		(start 0.2 -0.35)
+		(end 0.2 0.35)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "175e214e-a285-4979-8eb7-a7cd6c660794")
+	)
+	(fp_line
+		(start 0.2 0)
+		(end 0.45 0)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "da94b9be-5267-4f7d-ad06-cf5c719fcf26")
+	)
+	(fp_line
+		(start 0.2 0.35)
+		(end -0.3 0)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "745d98f1-89fe-41a2-91f1-08332183b920")
+	)
+	(fp_line
+		(start 0.9 -0.7)
+		(end 0.9 0.7)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "7271c666-abd5-4001-9c7d-8ea12b628ac8")
+	)
+	(fp_line
+		(start 0.9 0.7)
+		(end -0.9 0.7)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "5dee7cd0-4ff1-4d21-96d9-6bc1ca328433")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 -1.85 0)
+		(layer "F.Fab")
+		(uuid "2e8588f6-3913-414d-afd0-92c547b7ab5e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd roundrect
+		(at -1.25 0)
+		(size 1 0.8)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "18909141-c19e-45b4-80a4-2b020f8ca846")
+	)
+	(pad "2" smd roundrect
+		(at 1.25 0)
+		(size 1 0.8)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "fd44485a-a326-4ac2-bdb6-4bcc60e15a5c")
+	)
+	(embedded_fonts no)
+	(model "${KICAD_MYLIB}/3d/D_SOD-323-M.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)
