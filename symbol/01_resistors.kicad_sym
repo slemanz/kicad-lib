@@ -2,6 +2,294 @@
 	(version 20241209)
 	(generator "kicad_symbol_editor")
 	(generator_version "9.0")
+	(symbol "POT_10K-3362P-1-103LF-TH"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "R"
+			(at -2.54 0 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at -4.445 0 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "01_resistors:TH_3362P"
+			(at 0 -7.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.bourns.com/docs/Product-Datasheets/3362.pdf"
+			(at 0 -7.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Trimmer potentiometer 10k 10% 0.5W single turn cermet, 1/4in square top adjust, through hole"
+			(at 0 -7.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" "10%"
+			(at 0 -7.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Power" "0.5W"
+			(at 0 -7.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" "TH"
+			(at 0 -7.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Bourns"
+			(at 0 -7.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "3362P-1-103LF"
+			(at 0 -7.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C58159"
+			(at 0 -7.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "4.88mm"
+			(at 0 -7.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Temp_Range" "-55C to +125C"
+			(at 0 -7.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "potentiometer trimmer trimpot variable resistor"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "TH_3362P*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "POT_10K-3362P-1-103LF-TH_0_1"
+			(polyline
+				(pts
+					(xy 0 2.54) (xy 0 2.286)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 2.286) (xy 1.016 1.905) (xy 0 1.524) (xy -1.016 1.143) (xy 0 0.762)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 0.762) (xy 1.016 0.381) (xy 0 0) (xy -1.016 -0.381) (xy 0 -0.762)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 -0.762) (xy 1.016 -1.143) (xy 0 -1.524) (xy -1.016 -1.905) (xy 0 -2.286)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 -2.286) (xy 0 -2.54)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 1.143 0) (xy 2.286 0.508) (xy 2.286 -0.508) (xy 1.143 0)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type outline)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.54 0) (xy 1.524 0)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "POT_10K-3362P-1-103LF-TH_1_1"
+			(pin passive line
+				(at 0 3.81 270)
+				(length 1.27)
+				(name "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -3.81 90)
+				(length 1.27)
+				(name "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 3.81 0 180)
+				(length 1.27)
+				(name "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
 	(symbol "R_BASE"
 		(pin_numbers
 			(hide yes)
@@ -227,6 +515,140 @@
 		)
 		(embedded_fonts no)
 	)
+	(symbol "RES-SH_1R-0.25W-1%-1206"
+		(extends "R_BASE")
+		(property "Reference" "R"
+			(at 2.54 0 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1R"
+			(at -2.54 0 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "01_resistors:R_1206_3216Metric"
+			(at 1.016 -0.254 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C17928.pdf"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "RES SHUNT 1Ω ±1% 250mW 1206 current sense"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" "1%"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Power" "250mW"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Package" "1206"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "1206W4F100KT5E"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C17928"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer2" "VISHAY"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN2" "CRCW12061R00FKEA"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "R res resistor shunt current sense"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "R_*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
 	(symbol "RES_0R-0.125W-0805"
 		(extends "R_BASE")
 		(property "Reference" "R"
@@ -361,7 +783,6 @@
 				(hide yes)
 			)
 		)
-		(embedded_fonts no)
 	)
 	(symbol "RES_0R-0.1W-0603"
 		(extends "R_BASE")
@@ -497,7 +918,6 @@
 				(hide yes)
 			)
 		)
-		(embedded_fonts no)
 	)
 	(symbol "RES_1.1K-0.1W-1%-0603"
 		(extends "R_BASE")
@@ -632,7 +1052,6 @@
 				(hide yes)
 			)
 		)
-		(embedded_fonts no)
 	)
 	(symbol "RES_100K-0.125W-1%-0805"
 		(extends "R_BASE")
@@ -767,7 +1186,6 @@
 				(hide yes)
 			)
 		)
-		(embedded_fonts no)
 	)
 	(symbol "RES_100K-0.1W-1%-0603"
 		(extends "R_BASE")
@@ -902,7 +1320,6 @@
 				(hide yes)
 			)
 		)
-		(embedded_fonts no)
 	)
 	(symbol "RES_10K-0.125W-1%-0805"
 		(extends "R_BASE")
@@ -1037,7 +1454,6 @@
 				(hide yes)
 			)
 		)
-		(embedded_fonts no)
 	)
 	(symbol "RES_10K-0.1W-1%-0603"
 		(extends "R_BASE")
@@ -1172,7 +1588,6 @@
 				(hide yes)
 			)
 		)
-		(embedded_fonts no)
 	)
 	(symbol "RES_1K-0.125W-1%-0805"
 		(extends "R_BASE")
@@ -1307,7 +1722,6 @@
 				(hide yes)
 			)
 		)
-		(embedded_fonts no)
 	)
 	(symbol "RES_1K-0.1W-1%-0603"
 		(extends "R_BASE")
@@ -1442,7 +1856,140 @@
 				(hide yes)
 			)
 		)
-		(embedded_fonts no)
+	)
+	(symbol "RES_1K-3W-1%-AXL-TH"
+		(extends "R_BASE")
+		(property "Reference" "R"
+			(at 2.54 0 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1k"
+			(at -2.54 0 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "01_resistors:R_Axial_DIN0516_L15.5mm_D5.0mm_P20.32mm_Horizontal"
+			(at 1.016 -0.254 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Huaxing-Mechanical-Elec--MF3WS-1KR-1-T_C714180.pdf"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "RES 1kΩ ±1% 3W metal film axial THT DIN0516 D5xL15.5mm"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" "1%"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Power" "3W"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Package" "AXL-TH"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Huaxing Mechanical-Elec"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "MF3WS-1KΩ±1%T"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C714180"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer2" "VISHAY"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN2" "CPCF031K000FB31"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "R res resistor axial power metal film"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "R_*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 	)
 	(symbol "RES_220K-0.1W-1%-0603"
 		(extends "R_BASE")
@@ -1577,7 +2124,6 @@
 				(hide yes)
 			)
 		)
-		(embedded_fonts no)
 	)
 	(symbol "RES_220R-0.1W-1%-0603"
 		(extends "R_BASE")
@@ -1712,7 +2258,6 @@
 				(hide yes)
 			)
 		)
-		(embedded_fonts no)
 	)
 	(symbol "RES_22K-0.1W-1%-0603"
 		(extends "R_BASE")
@@ -1847,7 +2392,6 @@
 				(hide yes)
 			)
 		)
-		(embedded_fonts no)
 	)
 	(symbol "RES_4.7K-0.125W-1%-0805"
 		(extends "R_BASE")
@@ -1982,7 +2526,6 @@
 				(hide yes)
 			)
 		)
-		(embedded_fonts no)
 	)
 	(symbol "RES_4.7K-0.1W-1%-0603"
 		(extends "R_BASE")
@@ -2117,7 +2660,6 @@
 				(hide yes)
 			)
 		)
-		(embedded_fonts no)
 	)
 	(symbol "RES_470R-0.1W-1%-0603"
 		(extends "R_BASE")
@@ -2252,7 +2794,6 @@
 				(hide yes)
 			)
 		)
-		(embedded_fonts no)
 	)
 	(symbol "RES_47R-0.1W-1%-0603"
 		(extends "R_BASE")
@@ -2387,7 +2928,6 @@
 				(hide yes)
 			)
 		)
-		(embedded_fonts no)
 	)
 	(symbol "RES_68.1K-0.1W-1%-0603"
 		(extends "R_BASE")
@@ -2522,6 +3062,5 @@
 				(hide yes)
 			)
 		)
-		(embedded_fonts no)
 	)
 )
