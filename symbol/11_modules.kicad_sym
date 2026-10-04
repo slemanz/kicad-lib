@@ -670,7 +670,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "U"
-			(at -7.62 10.16 0)
+			(at -6.35 13.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -678,7 +678,7 @@
 			)
 		)
 		(property "Value" "ESP-01"
-			(at 2.54 10.16 0)
+			(at 3.81 13.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -686,7 +686,7 @@
 			)
 		)
 		(property "Footprint" "11_modules:ESP-01"
-			(at 0 0 0)
+			(at 0 -12.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -696,7 +696,7 @@
 			)
 		)
 		(property "Datasheet" "https://docs.ai-thinker.com/_media/esp8266/esp8266_series_modules_user_manual_en.pdf"
-			(at 0 0 0)
+			(at -1.27 -12.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -705,7 +705,7 @@
 			)
 		)
 		(property "Description" "Wi-Fi module ESP8266, 802.11 b/g/n, UART, PCB antenna, 2x4 2.54mm through-hole, 3.3V"
-			(at 0 0 0)
+			(at -1.27 -12.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -714,7 +714,7 @@
 			)
 		)
 		(property "Package" "MOD"
-			(at 0 0 0)
+			(at 0 -12.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -723,7 +723,7 @@
 			)
 		)
 		(property "Manufacturer" "Ai-Thinker"
-			(at 0 0 0)
+			(at 0 -12.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -732,7 +732,7 @@
 			)
 		)
 		(property "MPN" "ESP-01"
-			(at 0 0 0)
+			(at 0 -12.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -741,7 +741,7 @@
 			)
 		)
 		(property "Manufacturer2" "Ai-Thinker"
-			(at 0 0 0)
+			(at 0 -12.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -750,7 +750,7 @@
 			)
 		)
 		(property "MPN2" "ESP-01S"
-			(at 0 0 0)
+			(at 0 -12.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -759,7 +759,7 @@
 			)
 		)
 		(property "LCSC" "C503581"
-			(at 0 0 0)
+			(at -1.27 -12.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -768,7 +768,7 @@
 			)
 		)
 		(property "Mating_Parts" "08_connectors:CON-SKT_2x4-2.54-TH"
-			(at 0 0 0)
+			(at 0 -12.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -796,8 +796,8 @@
 		)
 		(symbol "MOD-RF_ESP-01_1_1"
 			(rectangle
-				(start -7.62 7.62)
-				(end 7.62 -7.62)
+				(start -7.62 12.7)
+				(end 7.62 -10.16)
 				(stroke
 					(width 0.254)
 					(type default)
@@ -806,7 +806,25 @@
 					(type background)
 				)
 			)
-			(pin input line
+			(pin passive line
+				(at -10.16 10.16 0)
+				(length 2.54)
+				(name "VCC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
 				(at -10.16 5.08 0)
 				(length 2.54)
 				(name "~{RST}"
@@ -824,7 +842,7 @@
 					)
 				)
 			)
-			(pin input line
+			(pin passive line
 				(at -10.16 2.54 0)
 				(length 2.54)
 				(name "EN"
@@ -842,7 +860,7 @@
 					)
 				)
 			)
-			(pin bidirectional line
+			(pin passive line
 				(at -10.16 0 0)
 				(length 2.54)
 				(name "TXD/IO1"
@@ -860,7 +878,7 @@
 					)
 				)
 			)
-			(pin bidirectional line
+			(pin passive line
 				(at -10.16 -2.54 0)
 				(length 2.54)
 				(name "RXD/IO3"
@@ -878,26 +896,8 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at 0 10.16 270)
-				(length 2.54)
-				(name "VCC"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "8"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at 0 -10.16 90)
+			(pin passive line
+				(at -10.16 -7.62 0)
 				(length 2.54)
 				(name "GND"
 					(effects
@@ -914,7 +914,7 @@
 					)
 				)
 			)
-			(pin bidirectional line
+			(pin passive line
 				(at 10.16 5.08 180)
 				(length 2.54)
 				(name "IO0"
@@ -932,7 +932,7 @@
 					)
 				)
 			)
-			(pin bidirectional line
+			(pin passive line
 				(at 10.16 2.54 180)
 				(length 2.54)
 				(name "IO2"
