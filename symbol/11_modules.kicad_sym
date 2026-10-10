@@ -41,7 +41,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "LCD character display module 16x2, HD44780 compatible, 8-bit parallel bus, 5V, LED backlight, 80x36mm outline"
+		(property "Description" "LCD CHARACTER DISPLAY MODULE 16x2"
 			(at 1.27 -22.86 0)
 			(effects
 				(font
@@ -704,7 +704,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Wi-Fi module ESP8266, 802.11 b/g/n, UART, PCB antenna, 2x4 2.54mm through-hole, 3.3V"
+		(property "Description" "ESP8266 WI-FI IOT MODULE"
 			(at -1.27 -12.7 0)
 			(effects
 				(font

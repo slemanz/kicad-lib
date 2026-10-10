@@ -485,6 +485,18 @@
 		(symbol "D_SCH_DUAL_CC_BASE_0_1"
 			(polyline
 				(pts
+					(xy -5.08 0) (xy -3.81 0)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
 					(xy -3.81 1.27) (xy -3.81 -1.27) (xy -1.27 0) (xy -3.81 1.27)
 				)
 				(stroke
@@ -501,54 +513,6 @@
 				)
 				(stroke
 					(width 0.254)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -5.08 0) (xy -3.81 0)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 3.81 1.27) (xy 3.81 -1.27) (xy 1.27 0) (xy 3.81 1.27)
-				)
-				(stroke
-					(width 0.254)
-					(type solid)
-				)
-				(fill
-					(type outline)
-				)
-			)
-			(polyline
-				(pts
-					(xy 1.778 1.016) (xy 1.778 1.27) (xy 1.27 1.27) (xy 1.27 -1.27) (xy 0.762 -1.27) (xy 0.762 -1.016)
-				)
-				(stroke
-					(width 0.254)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 5.08 0) (xy 3.81 0)
-				)
-				(stroke
-					(width 0)
 					(type default)
 				)
 				(fill
@@ -590,6 +554,42 @@
 					(type outline)
 				)
 			)
+			(polyline
+				(pts
+					(xy 1.778 1.016) (xy 1.778 1.27) (xy 1.27 1.27) (xy 1.27 -1.27) (xy 0.762 -1.27) (xy 0.762 -1.016)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 3.81 1.27) (xy 3.81 -1.27) (xy 1.27 0) (xy 3.81 1.27)
+				)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type outline)
+				)
+			)
+			(polyline
+				(pts
+					(xy 5.08 0) (xy 3.81 0)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
 		)
 		(symbol "D_SCH_DUAL_CC_BASE_1_1"
 			(pin passive line
@@ -611,24 +611,6 @@
 				)
 			)
 			(pin passive line
-				(at 7.62 0 180)
-				(length 2.54)
-				(name "A2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
 				(at 0 -5.08 90)
 				(length 2.54)
 				(name "K"
@@ -639,6 +621,24 @@
 					)
 				)
 				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 7.62 0 180)
+				(length 2.54)
+				(name "A2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -2618,7 +2618,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "DIODE SCHOTTKY ARRAY 30V 200mA 1V@100mA DUAL COMMON CATHODE SOT-23"
+		(property "Description" "DIODE ARR SCHOTT 30V 200MA SOT23"
 			(at 0 0 0)
 			(effects
 				(font
@@ -2699,7 +2699,6 @@
 				(hide yes)
 			)
 		)
-		(embedded_fonts no)
 	)
 	(symbol "DIO-S_40V-1A-0.55V-SOD-123F"
 		(extends "D_SCH_BASE")
@@ -3064,7 +3063,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "DIODE SCHOTTKY 40V 3A SMA(DO-214AC)"
+		(property "Description" "DIODE SCHOTTKY 40V 3A SMA"
 			(at 0 0 0)
 			(effects
 				(font
@@ -3282,7 +3281,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "TVS DIODE 33V 53.3V 400W UNIDIRECTIONAL SMA(DO-214AC)"
+		(property "Description" "TVS DIODE 33VWM 53.3VC DO214AC"
 			(at 0 0 0)
 			(effects
 				(font
@@ -4435,7 +4434,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "LED RGB three independent dies 625-525-465nm 20mA per colour water clear PLCC-6 5050 SMD"
+		(property "Description" "TOP LED 5050 RGB SMD"
 			(at 0 0 0)
 			(effects
 				(font

@@ -42,7 +42,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Male pin header 1x16 2.54mm pitch through hole 6mm mating pin, soldered into the 1602 LCD module itself so the display can plug into this board, never mounted on this board"
+		(property "Description" "CONN HEADER MALE VERT 16POS 2.54MM"
 			(at 0 0 0)
 			(effects
 				(font
@@ -325,7 +325,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Male pin header 1x4 2.54mm pitch straight through hole 6mm mating pin 2.54mm insulator 3mm tail 3A"
+		(property "Description" "CONN HEADER MALE VERT 4POS 2.54MM"
 			(at 0 0 0)
 			(effects
 				(font
@@ -517,7 +517,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "CONN HEADER JST XH 4POS 2.50mm pitch shrouded polarized vertical top entry TH 3A 250V"
+		(property "Description" "CONN HEADER JST XH 4POS 2.50mm TH"
 			(at 0 0 0)
 			(effects
 				(font
@@ -755,7 +755,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "DC power jack 5.5mm barrel 2.0mm center pin, mates 5.5x2.1mm plug, right angle TH, switched, 5A"
+		(property "Description" "CONN PWR JACK TH R/A"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1039,7 +1039,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Female header 1x16 2.54mm pitch through hole 8.5mm insulator, board side receptacle for a 1602 LCD module, no footprint of its own, its pads belong to 11_modules:WC1602A"
+		(property "Description" "CONN SOCKET 16POS 2.54mm SINGLE ROW TH"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1157,7 +1157,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Female header 2x4 2.54mm pitch through hole 8.5mm insulator, board side receptacle for an ESP-01 module, no footprint of its own, its pads belong to 11_modules:ESP-01"
+		(property "Description" "CONN SOCKET 8POS 2.54mm DUAL ROW TH"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1847,7 +1847,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "CONN RCPT USB 2.0 Micro-B 5POS SMD right angle 4 TH shell legs 30V 1.8A"
+		(property "Description" "CONN RCPT USB MICRO-B 5POS SMD"
 			(at -2.54 11.43 0)
 			(effects
 				(font

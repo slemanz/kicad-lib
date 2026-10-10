@@ -47,7 +47,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Trimmer potentiometer 10k 10% 0.5W single turn cermet, 1/4in square top adjust, through hole"
+		(property "Description" "TRIMMER 10K OHM 0.5W PC PIN TOP"
 			(at 0 -7.62 0)
 			(effects
 				(font

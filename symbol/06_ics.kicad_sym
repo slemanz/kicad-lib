@@ -1501,7 +1501,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "I/O expander 8-bit remote, I2C-bus, interrupt output, address 0x20-0x27, SO16 wide body"
+		(property "Description" "IC EXPANDER 100KHZ I2C 16SO"
 			(at 0 0 0)
 			(effects
 				(font
@@ -2353,7 +2353,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "IC ESD PROTECTION ARRAY 2-LINE USB 2.0 VERY LOW CAPACITANCE 3.5pF SOT-23-6"
+		(property "Description" "TVS DIODE 5.25VWM 17VC SOT23-6"
 			(at 0 0 0)
 			(effects
 				(font
@@ -3732,7 +3732,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "IC MCU 32BIT Arm Cortex-M0 48MHz 128KB flash 16KB RAM USB FS crystal-less 37 GPIO 2.0-3.6V LQFP-48 7x7mm"
+		(property "Description" "IC MCU 32BIT 128KB FLASH 48LQFP"
 			(at 2.54 -43.18 0)
 			(effects
 				(font
@@ -4946,7 +4946,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Serial NOR flash 32Mbit 4MB, SPI/Dual/Quad SPI 133MHz, 2.7V to 3.6V, SOIC-8 150mil"
+		(property "Description" "IC FLASH 32MBIT SPI/QUAD 8SOIC"
 			(at 2.54 -10.16 0)
 			(effects
 				(font
@@ -5983,7 +5983,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Digital temperature sensor and thermal watchdog, I2C-bus, 11-bit 0.125C resolution, +-2C accuracy, 2.8V to 5.5V, address 0x48-0x4F, SO8"
+		(property "Description" "SENSOR DIGITAL -55C-125C 8SO"
 			(at 0 0 0)
 			(effects
 				(font

@@ -47,7 +47,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Crystal 32.768kHz 12.5pF +-20ppm ESR 70k max, FC-135, SMD 3215 2-pin 3.2x1.5mm"
+		(property "Description" "CRYSTAL 32.7680KHZ 12.5PF SMD"
 			(at 0 7.62 0)
 			(effects
 				(font
