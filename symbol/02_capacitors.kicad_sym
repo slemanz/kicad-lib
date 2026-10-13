@@ -1396,7 +1396,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "CAP CER 1nF 50V X7R 0603"
+		(property "Description" "CAP CER 10nF 50V X7R 0603"
 			(at 0 0 0)
 			(effects
 				(font
