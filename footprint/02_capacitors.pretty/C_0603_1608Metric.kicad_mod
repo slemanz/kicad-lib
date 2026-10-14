@@ -84,8 +84,8 @@
 		(uuid "8423f349-ef10-4ed9-88ca-9299ead26597")
 	)
 	(fp_rect
-		(start -0.8 -0.4)
-		(end 0.8 0.4)
+		(start -1.475 -0.725)
+		(end 1.475 0.725)
 		(stroke
 			(width 0.1)
 			(type solid)
@@ -100,8 +100,9 @@
 		(uuid "ec820b05-df3f-4c92-8cf3-3451e127db91")
 		(effects
 			(font
-				(size 0.4 0.4)
-				(thickness 0.06)
+				(size 0.8 0.8)
+				(thickness 0.15)
+				(bold yes)
 			)
 		)
 	)

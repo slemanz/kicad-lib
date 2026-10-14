@@ -203,9 +203,20 @@
 		(layer "F.CrtYd")
 		(uuid "0a67d15f-506c-40e3-a177-ceebf994b192")
 	)
+	(fp_circle
+		(center -1.625 -1.1)
+		(end -1.725 -1.2)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.Fab")
+		(uuid "b42b0752-51ba-4ab7-a797-8ed6fcf43545")
+	)
 	(fp_poly
 		(pts
-			(xy -0.4 -1.45) (xy 0.8 -1.45) (xy 0.8 1.45) (xy -0.8 1.45) (xy -0.8 -1.05)
+			(xy -2.05 -1.5) (xy 2.05 -1.5) (xy 2.05 1.5) (xy -2.05 1.5)
 		)
 		(stroke
 			(width 0.1)

@@ -105,8 +105,8 @@
 		(uuid "277b3168-086d-4feb-9ab8-026e88452a58")
 	)
 	(fp_line
-		(start -1.4 -0.9)
-		(end 1.4 -0.9)
+		(start -2.35 -1.15)
+		(end 2.35 -1.15)
 		(stroke
 			(width 0.1)
 			(type solid)
@@ -115,8 +115,8 @@
 		(uuid "4ad4e92b-9b64-4eed-8c4b-d96097a88e61")
 	)
 	(fp_line
-		(start -1.4 0.9)
-		(end -1.4 -0.9)
+		(start -2.35 1.15)
+		(end -2.35 -1.15)
 		(stroke
 			(width 0.1)
 			(type solid)
@@ -125,78 +125,18 @@
 		(uuid "1ac565ca-970b-44d3-9087-59b04ab60eae")
 	)
 	(fp_line
-		(start -0.75 0)
-		(end -0.35 0)
+		(start -2 1.15)
+		(end -2 -1.15)
 		(stroke
 			(width 0.1)
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "46dc275b-0899-4d0d-8713-b622e0c22f0e")
+		(uuid "b3a46ecb-96fa-427c-9b74-0e0b023ceefb")
 	)
 	(fp_line
-		(start -0.35 0)
-		(end -0.35 -0.55)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(layer "F.Fab")
-		(uuid "9b27c55d-1944-4b36-b982-eb719a46d948")
-	)
-	(fp_line
-		(start -0.35 0)
-		(end -0.35 0.55)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(layer "F.Fab")
-		(uuid "68f6cd3c-fdce-44a9-af86-78cf47501eda")
-	)
-	(fp_line
-		(start -0.35 0)
-		(end 0.25 -0.4)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(layer "F.Fab")
-		(uuid "e7535fdf-c98f-460e-b3e7-c5c3c78dc09f")
-	)
-	(fp_line
-		(start 0.25 -0.4)
-		(end 0.25 0.4)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(layer "F.Fab")
-		(uuid "00b1df15-efaf-4389-b1a8-f9ec8af76c39")
-	)
-	(fp_line
-		(start 0.25 0)
-		(end 0.75 0)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(layer "F.Fab")
-		(uuid "44d78e10-5c1c-4284-ba9c-163e5208ec30")
-	)
-	(fp_line
-		(start 0.25 0.4)
-		(end -0.35 0)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(layer "F.Fab")
-		(uuid "c82b3165-5533-40f3-a703-e13e1a64873f")
-	)
-	(fp_line
-		(start 1.4 -0.9)
-		(end 1.4 0.9)
+		(start 2.35 -1.15)
+		(end 2.35 1.15)
 		(stroke
 			(width 0.1)
 			(type solid)
@@ -205,8 +145,8 @@
 		(uuid "c36e9a65-0388-45d7-9b3b-1648a22d40d4")
 	)
 	(fp_line
-		(start 1.4 0.9)
-		(end -1.4 0.9)
+		(start 2.35 1.15)
+		(end -2.35 1.15)
 		(stroke
 			(width 0.1)
 			(type solid)
