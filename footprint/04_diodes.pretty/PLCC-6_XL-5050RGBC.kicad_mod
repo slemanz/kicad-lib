@@ -17,7 +17,7 @@
 		)
 	)
 	(property "Value" "PLCC-6_XL-5050RGBC"
-		(at 0 3.3 0)
+		(at 0 3.7 0)
 		(layer "F.Fab")
 		(uuid "7b3e91d4-2c60-4a97-8d15-6f20b1e7c012")
 		(effects
@@ -103,54 +103,25 @@
 		(uuid "7b3e91d4-2c60-4a97-8d15-6f20b1e7c034")
 	)
 	(fp_line
-		(start -2.5 -2.5)
-		(end -2.5 2.5)
+		(start -3.15 -2.75)
+		(end -3.15 2.75)
 		(stroke
 			(width 0.1)
-			(type solid)
+			(type default)
 		)
 		(layer "F.Fab")
-		(uuid "7b3e91d4-2c60-4a97-8d15-6f20b1e7c041")
+		(uuid "dd89a3dc-c468-4713-93b7-8a55c7bbfae3")
 	)
-	(fp_line
-		(start -2.5 -1.9)
-		(end -1.9 -2.5)
+	(fp_rect
+		(start -3.65 -2.75)
+		(end 3.65 2.75)
 		(stroke
 			(width 0.1)
-			(type solid)
+			(type default)
 		)
+		(fill no)
 		(layer "F.Fab")
-		(uuid "7b3e91d4-2c60-4a97-8d15-6f20b1e7c042")
-	)
-	(fp_line
-		(start -2.5 2.5)
-		(end 2.5 2.5)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(layer "F.Fab")
-		(uuid "7b3e91d4-2c60-4a97-8d15-6f20b1e7c043")
-	)
-	(fp_line
-		(start 2.5 -2.5)
-		(end -2.5 -2.5)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(layer "F.Fab")
-		(uuid "7b3e91d4-2c60-4a97-8d15-6f20b1e7c044")
-	)
-	(fp_line
-		(start 2.5 2.5)
-		(end 2.5 -2.5)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(layer "F.Fab")
-		(uuid "7b3e91d4-2c60-4a97-8d15-6f20b1e7c045")
+		(uuid "3792eb2c-b3bb-403c-98dd-4f0b4ff5b5e5")
 	)
 	(fp_circle
 		(center 0 0)
@@ -169,8 +140,9 @@
 		(uuid "7b3e91d4-2c60-4a97-8d15-6f20b1e7c052")
 		(effects
 			(font
-				(size 0.6 0.6)
-				(thickness 0.06)
+				(size 0.8 0.8)
+				(thickness 0.15)
+				(bold yes)
 			)
 		)
 	)

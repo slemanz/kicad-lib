@@ -1,12 +1,14 @@
 (footprint "C_1210_3225Metric"
 	(version 20241229)
-	(generator "kicad-footprint-generator")
+	(generator "pcbnew")
+	(generator_version "9.0")
 	(layer "F.Cu")
 	(descr "Capacitor SMD 1210 (3225 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 	(tags "capacitor")
 	(property "Reference" "REF**"
 		(at 0 -2.3 0)
 		(layer "F.SilkS")
+		(uuid "9f220bdf-7e23-439f-a5c8-b3efdca18a53")
 		(effects
 			(font
 				(size 1 1)
@@ -17,9 +19,34 @@
 	(property "Value" "C_1210_3225Metric"
 		(at 0 2.3 0)
 		(layer "F.Fab")
+		(uuid "142f0a70-2116-4c87-a432-fb5d98072119")
 		(effects
 			(font
 				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "9d282919-f4c7-45a1-b2f4-1ecf00d1d548")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "5ed70238-467b-41e7-bdf5-9dc9f17d3182")
+		(effects
+			(font
+				(size 1.27 1.27)
 				(thickness 0.15)
 			)
 		)
@@ -33,6 +60,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
+		(uuid "bfe07767-e4c1-4c84-9d4c-f16de1041689")
 	)
 	(fp_line
 		(start -0.711252 1.36)
@@ -42,6 +70,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
+		(uuid "e3f4a746-41de-433f-a0d5-81922efed5c6")
 	)
 	(fp_rect
 		(start -2.3 -1.6)
@@ -52,24 +81,28 @@
 		)
 		(fill no)
 		(layer "F.CrtYd")
+		(uuid "f1c4878c-33db-40d0-bea1-781c5a5a396d")
 	)
 	(fp_rect
-		(start -1.6 -1.25)
-		(end 1.6 1.25)
+		(start -2.3 -1.6)
+		(end 2.3 1.6)
 		(stroke
 			(width 0.1)
 			(type solid)
 		)
 		(fill no)
 		(layer "F.Fab")
+		(uuid "ffe3e0f0-a2d9-427c-a0d7-932232e648ae")
 	)
 	(fp_text user "${REFERENCE}"
 		(at 0 0 0)
 		(layer "F.Fab")
+		(uuid "7df33054-5976-42ff-aaa2-23f952cf4ece")
 		(effects
 			(font
 				(size 0.8 0.8)
-				(thickness 0.12)
+				(thickness 0.15)
+				(bold yes)
 			)
 		)
 	)
@@ -78,12 +111,14 @@
 		(size 1.15 2.7)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.217391)
+		(uuid "bb34288b-a118-4dbc-a52b-c7b089c6d588")
 	)
 	(pad "2" smd roundrect
 		(at 1.475 0)
 		(size 1.15 2.7)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.217391)
+		(uuid "48961a47-a786-4902-a4e2-c30d607767dc")
 	)
 	(embedded_fonts no)
 	(model "${KICAD_MYLIB}/3d/C_1210_3225Metric.step"

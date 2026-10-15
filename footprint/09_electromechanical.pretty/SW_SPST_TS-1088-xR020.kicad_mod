@@ -165,14 +165,25 @@
 		(layer "F.Fab")
 		(uuid "f11bc53c-a3bd-45e1-8684-49ba58184fa7")
 	)
+	(fp_circle
+		(center 0 0)
+		(end 0 -1.2)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "0fba9835-1ab1-4eac-a3b1-bf13237fc1a7")
+	)
 	(fp_text user "${REFERENCE}"
 		(at 0 0 0)
 		(layer "F.Fab")
 		(uuid "b618111c-4d85-41dc-be76-621aed6ccefc")
 		(effects
 			(font
-				(size 1 1)
-				(thickness 0.2)
+				(size 0.8 0.8)
+				(thickness 0.15)
 				(bold yes)
 			)
 		)

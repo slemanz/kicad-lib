@@ -84,15 +84,15 @@
 		(uuid "75edee5f-eb2d-4d0e-963a-dab3404d1bd1")
 	)
 	(fp_rect
-		(start -1 -0.625)
-		(end 1 0.625)
+		(start -1.675 -0.95)
+		(end 1.675 0.95)
 		(stroke
 			(width 0.1)
-			(type solid)
+			(type default)
 		)
 		(fill no)
 		(layer "F.Fab")
-		(uuid "8b8f98f9-439a-4f98-8c4b-821faa8e5315")
+		(uuid "9ff6164b-fc38-4465-8891-16fb60001881")
 	)
 	(fp_text user "${REFERENCE}"
 		(at 0 0 0)
@@ -100,8 +100,9 @@
 		(uuid "21bcdf1c-c7e9-436a-975a-8e7743949c1b")
 		(effects
 			(font
-				(size 0.5 0.5)
-				(thickness 0.08)
+				(size 0.8 0.8)
+				(thickness 0.15)
+				(bold yes)
 			)
 		)
 	)

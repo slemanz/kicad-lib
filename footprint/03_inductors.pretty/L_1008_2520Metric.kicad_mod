@@ -1,12 +1,14 @@
 (footprint "L_1008_2520Metric"
 	(version 20241229)
-	(generator "kicad-footprint-generator")
+	(generator "pcbnew")
+	(generator_version "9.0")
 	(layer "F.Cu")
 	(descr "Inductor SMD 1008 (2520 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: https://ecsxtal.com/store/pdf/ECS-MPI2520-SMD-POWER-INDUCTOR.pdf), generated with kicad-footprint-generator")
 	(tags "inductor")
 	(property "Reference" "REF**"
 		(at 0 -2.05 0)
 		(layer "F.SilkS")
+		(uuid "b8972e9c-ebad-4a71-a214-eb0689125a81")
 		(effects
 			(font
 				(size 1 1)
@@ -17,9 +19,34 @@
 	(property "Value" "L_1008_2520Metric"
 		(at 0 2.05 0)
 		(layer "F.Fab")
+		(uuid "b6d96420-707e-44da-9570-23506aefc20c")
 		(effects
 			(font
 				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "65317744-5129-42c3-b177-e67e403bd09e")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "23f22cb0-82f5-4f3e-9120-adf7145245cf")
+		(effects
+			(font
+				(size 1.27 1.27)
 				(thickness 0.15)
 			)
 		)
@@ -33,6 +60,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
+		(uuid "fec7913e-f360-471e-9e3e-7cb470008d38")
 	)
 	(fp_line
 		(start -0.261252 1.11)
@@ -42,6 +70,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
+		(uuid "5d68dbad-7beb-45ac-9aed-c0fdde5a09da")
 	)
 	(fp_rect
 		(start -1.95 -1.35)
@@ -52,20 +81,23 @@
 		)
 		(fill no)
 		(layer "F.CrtYd")
+		(uuid "53b10297-37ca-4ad1-b822-561fea4fb58f")
 	)
 	(fp_rect
-		(start -1.25 -1)
-		(end 1.25 1)
+		(start -1.95 -1.35)
+		(end 1.95 1.35)
 		(stroke
 			(width 0.1)
 			(type solid)
 		)
 		(fill no)
 		(layer "F.Fab")
+		(uuid "2f4581ce-b712-4fff-890b-56c078eaabb7")
 	)
 	(fp_text user "${REFERENCE}"
 		(at 0 0 0)
 		(layer "F.Fab")
+		(uuid "5001dbb5-d9d0-4534-b221-d29e44dd6fb1")
 		(effects
 			(font
 				(size 0.62 0.62)
@@ -78,12 +110,14 @@
 		(size 1.25 2.2)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.2)
+		(uuid "1f6f9288-c979-4ed2-8939-e9bceb5e1ba4")
 	)
 	(pad "2" smd roundrect
 		(at 1.075 0)
 		(size 1.25 2.2)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.2)
+		(uuid "77a903a0-ee1d-44f0-bcbc-0ec36676a50b")
 	)
 	(embedded_fonts no)
 	(model "${KICAD_MYLIB}/3d/L_1008_2520Metric.step"
