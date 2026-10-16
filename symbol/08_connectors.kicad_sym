@@ -1273,7 +1273,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "CONN RCPT M12 circular A-coded 8POS female right-angle PCB mount M12x1 panel thread IP67 30V 2A"
+		(property "Description" "CONN RCPT M12 8POS R/A TH"
 			(at 0 15.24 0)
 			(effects
 				(font

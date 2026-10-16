@@ -1918,7 +1918,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "IC RS-232 TRANSCEIVER 2-DRIVER 2-RECEIVER 3V-5.5V 15kV ESD SOIC-16"
+		(property "Description" "IC TRANSCEIVER FULL 2/2 16SOIC"
 			(at 0 0 0)
 			(effects
 				(font

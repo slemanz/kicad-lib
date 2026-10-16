@@ -4216,7 +4216,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "LED EMERALD GREEN WATER CLEAR 0603 SMD"
+		(property "Description" "LED GREEN 3V 5mA 0603"
 			(at 0 0 0)
 			(effects
 				(font
